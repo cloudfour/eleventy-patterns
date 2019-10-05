@@ -1,0 +1,40 @@
+{
+  "name": "unlucky-stick-figures",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0",
+    "@cloudfour/eslint-plugin": "^3.0.0",
+    "acorn": "^7.1.0",
+    "browser-sync": "^2.26.7",
+    "eslint": "^5.16.0",
+    "fast-glob": "^3.0.4",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-shell": "^0.7.1",
+    "install": "^0.13.0",
+    "node-sass": "^4.12.0",
+    "npm": "^6.11.3",
+    "path": "^0.12.7",
+    "prettier": "^1.18.2",
+    "require-dir": "^1.2.0"
+  },
+  "scripts": {
+    "start": "npx gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paul-Hebert/unlucky-stick-figures.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paul-Hebert/unlucky-stick-figures/issues"
+  },
+  "homepage": "https://github.com/Paul-Hebert/unlucky-stick-figures#readme",
+  "dependencies": {
+    "camelcase": "^5.3.1"
+  }
+}

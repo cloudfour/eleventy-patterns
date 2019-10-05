@@ -1,0 +1,11 @@
+---
+layout: pattern-library
+---
+
+{{{ content }}}
+
+{{#each collections.patternExamples}}
+  {{#if (isExamplePath this.inputPath ../page.inputPath)}}
+    {{> layouts/pattern-example this}}
+  {{/if}}
+{{/each}}

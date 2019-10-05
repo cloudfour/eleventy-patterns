@@ -1,0 +1,20 @@
+---
+title: Hello World
+layout: base
+---
+
+<h1>Hello World!</h1>
+
+<h2>Pages:</h2>
+
+<ul>
+  {{#each collections.pages}}
+    <li>
+      <a href="{{url url}}">
+        {{data.title}}
+      </a>
+    </li>
+  {{/each}}
+</ul>
+
+<a href="patterns">Patterns</a>
