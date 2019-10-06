@@ -6,7 +6,7 @@ This supports a pattern library, a prototyping environment, and an area for prod
 
 It uses handlebars for templating, Sass for CSS processing, and ~~Rollup for javascript transpilation and bundling~~.
 
-You're not meant to include this as a module. Instead, clone this as a starting point for your project and then tweak it to fit your needs. This makes it easier to directly edit the configuration without this project acting as a middleman between you and your config files.
+You're not meant to include this as a module. Instead, use this as a [template repository](https://css-tricks.com/using-github-template-repos-to-jump-start-static-site-projects/) and then tweak it to fit your needs. This makes it easier to directly edit the configuration without this project acting as a middleman between you and your config files.
 
 ## Getting Started
 
