@@ -3,4 +3,23 @@ layout: base
 styles: 
 - pattern-library
 ---
-{{{ content }}}
+<div class="📚layout">
+  <aside class="📚side-nav">
+    <nav>
+      <h3 class="📚side-nav__heading">
+        <a href="/patterns">
+          Patterns
+        </a>
+      </h3>
+
+      {{#each collections.patterns}}
+        <a href="{{url url}}" class="📚side-nav__link">
+          {{data.title}}
+        </a>
+      {{/each}}
+    </nav>
+  </aside>
+  <main class="📚content">
+  {{{ content }}}
+  </main>
+</div>

@@ -23,3 +23,8 @@ Once you've copied this project run the following commands to start working on y
 4. Scaffold out navigation
 5. Basic styles
 6. Better navigation
+7. Linting
+8. Common hbs helpers
+9. Code 
+  - syntax highlighing
+  - HBS code examples
