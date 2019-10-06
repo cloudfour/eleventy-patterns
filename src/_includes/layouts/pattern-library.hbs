@@ -6,29 +6,33 @@ styles:
 <div class="📚layout">
   <aside class="📚side-nav">
     <nav>
-      <h3 class="📚side-nav__heading">
-        <a href="/patterns">
-          Patterns
-        </a>
-      </h3>
+      <div class="📚side-nav__section">
+        <h3 class="📚side-nav__heading">
+          <a href="/patterns">
+            Patterns
+          </a>
+        </h3>
 
-      {{#each collections.patterns}}
-        <a href="{{url url}}" class="📚side-nav__link">
-          {{data.title}}
-        </a>
-      {{/each}}
+        {{#each collections.patterns}}
+          <a href="{{url url}}" class="📚side-nav__link">
+            {{data.title}}
+          </a>
+        {{/each}}
+      </div>
 
-      <h3 class="📚side-nav__heading">
-        <a href="/prototypes">
-          Prototypes
-        </a>
-      </h3>
+      <div class="📚side-nav__section">
+        <h3 class="📚side-nav__heading">
+          <a href="/prototypes">
+            Prototypes
+          </a>
+        </h3>
 
-      {{#each collections.prototypes}}
-        <a href="{{url url}}" class="📚side-nav__link">
-          {{data.title}}
-        </a>
-      {{/each}}
+        {{#each collections.prototypes}}
+          <a href="{{url url}}" class="📚side-nav__link">
+            {{data.title}}
+          </a>
+        {{/each}}
+      </div>
     </nav>
   </aside>
 
