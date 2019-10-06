@@ -23,6 +23,11 @@ module.exports = eleventyConfig => {
     return collection.getFilteredByGlob('src/pages/**/index.md');
   });
 
+  // Make prototypes available as a collection
+  eleventyConfig.addCollection('prototypes', function(collection) {
+    return collection.getFilteredByGlob('src/prototypes/*/*.hbs');
+  });
+
   // Make patterns available as collections
   eleventyConfig.addCollection('patterns', function(collection) {
     return collection.getFilteredByGlob('src/patterns/**/index.md');

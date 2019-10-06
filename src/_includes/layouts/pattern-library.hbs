@@ -1,7 +1,7 @@
 ---
 layout: base
 styles: 
-- pattern-library
+- /styles/pattern-library
 ---
 <div class="📚layout">
   <aside class="📚side-nav">
@@ -17,8 +17,21 @@ styles:
           {{data.title}}
         </a>
       {{/each}}
+
+      <h3 class="📚side-nav__heading">
+        <a href="/prototypes">
+          Prototypes
+        </a>
+      </h3>
+
+      {{#each collections.prototypes}}
+        <a href="{{url url}}" class="📚side-nav__link">
+          {{data.title}}
+        </a>
+      {{/each}}
     </nav>
   </aside>
+
   <main class="📚content">
   {{{ content }}}
   </main>
