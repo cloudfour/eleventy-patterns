@@ -2,6 +2,7 @@ const path = require('path');
 const fg = require('fast-glob');
 const fs = require('fs');
 const Handlebars = require('handlebars');
+const markdownHelper = require('helper-markdown');
 
 const helpers = require('./helpers');
 
@@ -15,8 +16,7 @@ module.exports = eleventyConfig => {
   });
 
   // Push images to the output folder
-  eleventyConfig.addPassthroughCopy('src/stick-figures/**/*.png');
-  eleventyConfig.addPassthroughCopy('src/stick-figures/**/*.jpg');
+  eleventyConfig.addPassthroughCopy('src/**/*.(png|svg|gif|jpg|jpeg)');
 
   // Make pages available as a collection
   eleventyConfig.addCollection('pages', function(collection) {
@@ -40,6 +40,8 @@ module.exports = eleventyConfig => {
       eleventyConfig[method](key, helpers[group][key]);
     });
   });
+
+  Handlebars.registerHelper('markdown', markdownHelper);
 
   // Register handlebars partials
   fg.sync('src/patterns/**/partials/**/*.hbs').forEach(file => {
