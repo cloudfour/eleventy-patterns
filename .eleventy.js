@@ -37,13 +37,8 @@ module.exports = eleventyConfig => {
   });
 
   // Register handlebars helpers
-  Object.keys(helpers).forEach(group => {
-    const method = `add${group}`;
-    if (typeof eleventyConfig[method] !== 'function') return;
-
-    Object.keys(helpers[group]).forEach(key => {
-      eleventyConfig[method](key, helpers[group][key]);
-    });
+  Object.keys(helpers).forEach(key => {
+    eleventyConfig.addHandlebarsHelper(key, helpers[key]);
   });
 
   Handlebars.registerHelper('markdown', markdownHelper);
