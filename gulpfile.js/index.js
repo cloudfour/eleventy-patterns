@@ -20,9 +20,4 @@ gulp.task(
   gulp.series('clean', gulp.parallel('content', 'css'))
 );
 
-/**
- * Include all tasks within the subdirectory automatically. This keeps each
- * task (and its dependencies) organized and easy to find and update.
- */
-
 gulp.task('default', gulp.series('build', gulp.parallel('serve', 'watch')));
