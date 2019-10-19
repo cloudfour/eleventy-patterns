@@ -2,7 +2,6 @@ const path = require('path');
 const fg = require('fast-glob');
 const fs = require('fs');
 const Handlebars = require('handlebars');
-const markdownHelper = require('helper-markdown');
 
 const helpers = require('./helpers');
 
@@ -40,8 +39,6 @@ module.exports = eleventyConfig => {
   Object.keys(helpers).forEach(key => {
     eleventyConfig.addHandlebarsHelper(key, helpers[key]);
   });
-
-  Handlebars.registerHelper('markdown', markdownHelper);
 
   // Register handlebars partials
   fg.sync('src/patterns/**/partials/**/*.hbs').forEach(file => {
