@@ -15,11 +15,11 @@ module.exports = eleventyConfig => {
   });
 
   // Push images to the output folder
-  eleventyConfig.addPassthroughCopy('src/**/*.(png|svg|gif|jpg|jpeg)');
+  eleventyConfig.addPassthroughCopy('src/**/*.(png|svg|gif|jpg|jpeg|ico)');
 
   // Make pages available as a collection
   eleventyConfig.addCollection('pages', function(collection) {
-    return collection.getFilteredByGlob('src/pages/**/index.md');
+    return collection.getFilteredByGlob('src/pages/**/index.*');
   });
 
   // Make prototypes available as a collection
