@@ -18,13 +18,12 @@ Once you've copied this project run the following commands to start working on y
 ## TODO
 
 1. Add rollup support
-2. Add prototyping env
-3. Add service worker/PWA support
-4. Scaffold out navigation
-5. Basic styles
-6. Better navigation
-7. Linting
-8. Common hbs helpers
-9. Code 
+2. Add service worker/PWA support
+3. Scaffold out navigation
+4. Basic styles
+5. Better navigation
+6. Linting
+7. Common hbs helpers
+8. Code 
   - syntax highlighing
   - HBS code examples
