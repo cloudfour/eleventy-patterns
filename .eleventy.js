@@ -19,7 +19,7 @@ module.exports = eleventyConfig => {
 
   // Make pages available as a collection
   eleventyConfig.addCollection('pages', function(collection) {
-    return collection.getFilteredByGlob('src/pages/**/index.*');
+    return collection.getFilteredByGlob('src/pages/**/*');
   });
 
   // Make prototypes available as a collection
