@@ -1,6 +1,6 @@
 /**
  * This file houses styles specifically for the pattern library documentation.
- * All styles are namespaced by `📚`. If you'd like to change this you can with
+ * All styles are namespaced by `S_`. If you'd like to change this you can with
  * a global find and replace. 
  *
  * These styles are not loaded on user facing pages.
@@ -14,7 +14,7 @@ html, body {
   height:100%;
 }
 
-.📚layout {
+.S_layout {
   background: #fff;
   display: flex;
   height: 100%;
@@ -32,11 +32,11 @@ html, body {
   }
 }
 
-.📚content {
+.S_content {
   padding: 1em;
 }
 
-.📚side-nav {
+.S_side-nav {
   background: #eee;
   flex-basis:10em;
   flex-grow: 0;
@@ -45,16 +45,16 @@ html, body {
   padding: 1em;
 }
 
-.📚side-nav__section {
+.S_side-nav__section {
   padding-bottom: 2em;
 }
 
-.📚pattern {
+.S_pattern {
   background: #ddd;
   padding: 0.5em;
 }
 
-.📚pattern__example {
+.S_pattern__example {
   background: #fff;
   padding: 1em;
 }
