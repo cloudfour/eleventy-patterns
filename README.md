@@ -1,4 +1,4 @@
-# Eleventy-Starter
+# Eleventy Patterns
 
 **(WIP)** A basic JAMStack setup with Eleventy and Gulp. I commonly end up scaffolding similar patterns. This includes some of that work to make starting other projects quicker.
 
