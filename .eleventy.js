@@ -5,15 +5,7 @@ const Handlebars = require('handlebars');
 
 const helpers = require('./helpers');
 
-const layoutsDir = 'src/_includes/layouts/';
-
 module.exports = eleventyConfig => {
-  // Configure layout files
-  fg.sync(layoutsDir + '*.hbs').forEach(file => {
-    const basename = path.basename(file, '.hbs');
-    eleventyConfig.addLayoutAlias(basename, `layouts/${basename}.hbs`);
-  });
-
   // Push images to the output folder
   eleventyConfig.addPassthroughCopy('src/**/*.(png|svg|gif|jpg|jpeg|ico)');
 

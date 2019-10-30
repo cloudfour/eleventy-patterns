@@ -1,6 +1,6 @@
 ---
 title: Pattern Template
-layout: pattern
+layout: layouts/pattern
 ---
 
 Here's an example of how to scaffold out a new pattern. 
