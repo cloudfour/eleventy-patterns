@@ -17,11 +17,6 @@ module.exports = eleventyConfig => {
   // Push images to the output folder
   eleventyConfig.addPassthroughCopy('src/**/*.(png|svg|gif|jpg|jpeg|ico)');
 
-  // Make pages available as a collection
-  eleventyConfig.addCollection('pages', function(collection) {
-    return collection.getFilteredByGlob('src/pages/**/*');
-  });
-
   // Make prototypes available as a collection
   eleventyConfig.addCollection('prototypes', function(collection) {
     return collection.getFilteredByGlob('src/prototypes/*/*.hbs');
