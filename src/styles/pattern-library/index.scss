@@ -6,13 +6,7 @@
  * These styles are not loaded on user facing pages.
  */
 
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  height:100%;
-}
+@import 'prism-code-highlighting.scss';
 
 .S_layout {
   background: #fff;
@@ -29,6 +23,10 @@ html, body {
 
   li {
     margin-left: 1em;
+  }
+
+  * {
+    box-sizing: border-box;
   }
 }
 
@@ -58,4 +56,8 @@ html, body {
 .S_pattern__example {
   background: #fff;
   padding: 1em;
+}
+
+.S_pattern__code {
+  padding-top: 0.5em;
 }

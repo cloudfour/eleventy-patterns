@@ -36,6 +36,7 @@
   },
   "homepage": "https://github.com/Paul-Hebert/eleventy-starter#readme",
   "dependencies": {
-    "camelcase": "^5.3.1"
+    "camelcase": "^5.3.1",
+    "prismjs": "^1.17.1"
   }
 }
