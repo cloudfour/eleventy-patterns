@@ -1,1 +1,1 @@
-console.log('The prototype has loaded.')
+console.log('The prototype has loaded.');
