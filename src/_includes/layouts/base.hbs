@@ -9,6 +9,12 @@
     {{#each styles}}
       <link rel="stylesheet" href="{{this}}.css">
     {{/each}}
+
+    <script src="/scripts/toolkit.js"></script>
+
+    {{#each scripts}}
+      <script src="{{this}}.js"></script>
+    {{/each}}
   </head>
   <body>
     {{{content}}}
