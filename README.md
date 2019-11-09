@@ -28,6 +28,10 @@ Once you've copied this project run the following commands to start working on y
   - code indentation
   - HBS code examples
 8. Add support for other template languages (Liquid?)
+9. Allow tags/labels on prototypes and patterns
+10. Hide prototypes/patterns
+11. Sort prototypes/patterns
+12. Allow iFraming of patterns
 
 ## Ideas
 
