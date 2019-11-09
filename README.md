@@ -27,3 +27,8 @@ Once you've copied this project run the following commands to start working on y
 7. Code 
   - code indentation
   - HBS code examples
+8. Add support for other template languages (Liquid?)
+
+## Ideas
+
+1. Task to stub out new pattern/prototype
