@@ -28,11 +28,9 @@ const questions = [
 ];
 
 gulp.task('newPrototype', cb => {
-  return inquirer.prompt(questions).then(answers => {
-    const title = answers.title;
-    const slug = answers.slug;
+  return inquirer.prompt(questions).then(({title, slug}) => {
     const prototypesRoot = 'src/prototypes/';
-    const prototypesPath = `${prototypesRoot}/${slug}`
+    const prototypesPath = `${prototypesRoot}/${slug}`;
 
     const markupFrontmatter = `
 ---
