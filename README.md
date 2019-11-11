@@ -10,7 +10,7 @@ This project includes some custom CLI commands to help you quickly iterate and s
 
 Once you've copied this project run the following commands to start working on your project:
 
-1. `npm ci` — install necessary dependencies
-2. `npm start` — Compile the project, start a server, and watch for updates
-3. Review the pattern and prototype examples to get a feel for the site structure and scaffolding
-4. Delete the examples. This can be done by running `npx gulp removeExamples`. **Use caution if you've made changes of your own!**
+1. `npm ci` — Install necessary dependencies.
+2. `npm start` — Compile the project, start a server, and watch for updates.
+3. Review the pattern and prototype examples to get a feel for the site structure and scaffolding.
+4. Delete the examples. This can be done by running `npx gulp removeExamples`. **Use caution if you've made changes of your own! This will remove and modify files.**
