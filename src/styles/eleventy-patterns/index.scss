@@ -17,6 +17,15 @@
   --font-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
+
+body, html {
+  height: 100%;
+}
+
+/**
+ * The code below should be moved to a pattern
+ */
+
 .EP_prototype-listing {
   display: flex;
 }
