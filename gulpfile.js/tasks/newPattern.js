@@ -49,10 +49,15 @@ const questions = [
     type: 'input',
     message: 'Documentation File Notes (optional)',
   },
+  {
+    name: 'includeJS',
+    type: 'confirm',
+    message: 'Include a JavaScript file?',
+  },
 ];
 
 gulp.task('newPattern', cb => {
-  return inquirer.prompt(questions).then(({title, slug, notes, docTitle, docSlug, docNotes}) => {
+  return inquirer.prompt(questions).then(({title, slug, notes, docTitle, docSlug, docNotes, includeJS}) => {
     const patternsRoot = 'src/patterns/';
     const patternsPath = `${patternsRoot}/${slug}`;
 
@@ -82,7 +87,9 @@ notes:
       // Create our main documentation file and our CSS/JS assets
       fs.writeFile(`${patternsPath}/index.md`, markdownFileContent, cb);
       fs.writeFile(`${patternsPath}/${slug}.scss`, '', cb);
-      fs.writeFile(`${patternsPath}/${slug}.js`, '', cb);
+      if(includeJS) {
+        fs.writeFile(`${patternsPath}/${slug}.js`, '', cb);
+      }
 
       // Create our pattern partial
       fs.mkdirSync(`${patternsPath}/partials`);
