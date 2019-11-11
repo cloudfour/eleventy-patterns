@@ -17,9 +17,13 @@
 
 .EP_layout__sidebar {
   background: #eee;
-  flex-basis:15em;
-  flex-grow: 0;
-  flex-shrink: 0;
+  flex: 1;
   height: 100%;
   padding: 2em;
+
+  @media(min-width: 40em) {
+    flex-basis:15em;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
 }
