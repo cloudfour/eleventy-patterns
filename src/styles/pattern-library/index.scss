@@ -8,9 +8,17 @@
 
 @import 'prism-code-highlighting.scss';
 
+:root {
+  /* System Fonts as used by GitHub */
+  --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* Monospace system fonts used by GitHub */
+  --font-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
 .EP_layout {
   background: #fff;
   display: flex;
+  font-family: var(--font-system);
   height: 100%;
 
   h1, h2, h3 {
@@ -55,10 +63,12 @@
 
 .EP_pattern__example {
   background: #fff;
+  font-family: unset;
   padding: 1em;
 }
 
 .EP_pattern__code {
+  font-family: var(--font-monospace);
   padding-top: 0.5em;
 }
 
