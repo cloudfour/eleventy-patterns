@@ -1,0 +1,26 @@
+/**
+ * Creates an iframe preview at the size of an iPhone 6. 
+ * Helpful for showcasing prototypes
+ */
+
+
+
+:root {
+  --S-preview-width: 320px;
+  --S-preview-height: 568px;
+}
+
+.EP_preview {
+  display: block;
+  height: calc(var(--S-preview-height) / 2);
+  overflow: hidden;
+  width: calc(var(--S-preview-width) / 2);
+}
+
+.EP_preview__iframe {
+  height: var(--S-preview-height);
+  pointer-events: none;
+  transform: scale(0.5);
+  transform-origin: top left;
+  width: var(--S-preview-width);
+}

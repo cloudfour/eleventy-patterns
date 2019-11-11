@@ -4,35 +4,35 @@ styles:
 - /styles/eleventy-patterns/index
 ---
 <div class="EP_layout">
-  <aside class="EP_side-nav ">
+  <aside class="EP_layout__sidebar">
     <nav class="EM_u_stagger-items">
-      <h3 class="EP_side-nav__heading">
+      <h3>
         <a href="/patterns">
           Patterns
         </a>
       </h3>
 
       {{#each collections.patterns}}
-        <a href="{{url url}}" class="EP_side-nav__link">
+        <a href="{{url url}}" class="EP_nav__link">
           {{data.title}}
         </a>
       {{/each}}
 
-      <h3 class="EP_side-nav__heading">
+      <h3>
         <a href="/prototypes">
           Prototypes
         </a>
       </h3>
 
       {{#each collections.prototypes}}
-        <a href="{{url url}}" class="EP_side-nav__link">
+        <a href="{{url url}}" class="EP_nav__link">
           {{data.title}}
         </a>
       {{/each}}
     </nav>
   </aside>
 
-  <main class="EP_content EM_u_stagger-items">
+  <main class="EP_layout__content EM_u_stagger-items">
     {{{ content }}}
   </main>
 </div>

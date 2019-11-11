@@ -1,0 +1,19 @@
+/**
+ * This is starting to get really meta...
+ * A pattern for displaying patterns
+ */
+
+.EP_pattern {
+  background: #ddd;
+  padding: 0.5em;
+}
+
+.EP_pattern__example {
+  background: #fff;
+  padding: 1em;
+}
+
+.EP_pattern__code {
+  font-family: var(--font-monospace);
+  padding-top: 0.5em;
+}

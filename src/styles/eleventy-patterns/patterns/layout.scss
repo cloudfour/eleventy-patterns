@@ -1,0 +1,20 @@
+.EP_layout {
+  background: #fff;
+  display: flex;
+  font-family: var(--font-system);
+  height: 100%;
+}
+
+.EP_layout__content {
+  padding: 2em;
+  flex-grow: 1;
+}
+
+.EP_layout__sidebar {
+  background: #eee;
+  flex-basis:10em;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 100%;
+  padding: 2em;
+}
