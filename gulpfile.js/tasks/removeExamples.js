@@ -14,16 +14,11 @@ gulp.task('removeExamples', async cb => {
     'src/prototypes/prototype-example',
   ]);
 
-  // These files are imported into our bundles. We need remove those import
-  // statements. We do this by replacing the import lines in those bundles
+  // This JavaScript is imported into a bundle. We need remove that import
+  // statement.
   await replace({
     files: 'src/scripts/toolkit.js',
     from: "import '../patterns/pattern-template/pattern-template.js';",
-    to: "",
-  });
-  await replace({
-    files: 'src/styles/toolkit.scss',
-    from: '@import "../patterns/pattern-template/pattern-template.scss";',
     to: "",
   });
 
