@@ -14,3 +14,4 @@ Once you've copied this project run the following commands to start working on y
 2. `npm start` — Compile the project, start a server, and watch for updates.
 3. Review the pattern and prototype examples to get a feel for the site structure and scaffolding.
 4. Delete the examples. This can be done by running `npx gulp removeExamples`. **Use caution if you've made changes of your own! This will remove and modify files.**
+5. `npm newPrototype` — Create your first prototype!
