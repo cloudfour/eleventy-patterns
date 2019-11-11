@@ -1,7 +1,6 @@
 # Eleventy Patterns
 
-**(WIP)** A pattern library and a prototyping environment, built with Eleventy
-and Gulp. It uses handlebars for templating, Sass for CSS processing, and Rollup for javascript transpilation and bundling.
+**(WIP)** A pattern library and a prototyping environment, built with [Eleventy](https://www.11ty.io/) and [Gulp](https://gulpjs.com/). It uses [Handlebars](https://handlebarsjs.com/) for templating, [Sass](https://sass-lang.com/) for CSS processing, and [Rollup](https://rollupjs.org/) for javascript transpilation and bundling.
 
 You're not meant to include this as a module. Instead, use this as a [template repository](https://css-tricks.com/using-github-template-repos-to-jump-start-static-site-projects/) and then tweak it to fit your needs. This makes it easier to directly edit the configuration without this project acting as a middleman between you and your config files.
 
