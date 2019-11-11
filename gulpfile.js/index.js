@@ -8,7 +8,7 @@ requireDir('./tasks');
 gulp.task('watch', () => {
   // Templates + static content
   gulp.watch(
-    ['src/**/*.(hbs|md)',],
+    ['**/*.(hbs|md)',],
     gulp.series('content', 'reload')
   );
   // CSS
