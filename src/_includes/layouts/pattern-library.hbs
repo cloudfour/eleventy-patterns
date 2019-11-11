@@ -3,32 +3,32 @@ layout: layouts/base
 styles: 
 - /styles/pattern-library/index
 ---
-<div class="S_layout">
-  <aside class="S_side-nav">
+<div class="EP_layout">
+  <aside class="EP_side-nav">
     <nav>
-      <div class="S_side-nav__section">
-        <h3 class="S_side-nav__heading">
+      <div class="EP_side-nav__section">
+        <h3 class="EP_side-nav__heading">
           <a href="/patterns">
             Patterns
           </a>
         </h3>
 
         {{#each collections.patterns}}
-          <a href="{{url url}}" class="S_side-nav__link">
+          <a href="{{url url}}" class="EP_side-nav__link">
             {{data.title}}
           </a>
         {{/each}}
       </div>
 
-      <div class="S_side-nav__section">
-        <h3 class="S_side-nav__heading">
+      <div class="EP_side-nav__section">
+        <h3 class="EP_side-nav__heading">
           <a href="/prototypes">
             Prototypes
           </a>
         </h3>
 
         {{#each collections.prototypes}}
-          <a href="{{url url}}" class="S_side-nav__link">
+          <a href="{{url url}}" class="EP_side-nav__link">
             {{data.title}}
           </a>
         {{/each}}
@@ -36,7 +36,7 @@ styles:
     </nav>
   </aside>
 
-  <main class="S_content">
+  <main class="EP_content">
     {{{ content }}}
   </main>
 </div>

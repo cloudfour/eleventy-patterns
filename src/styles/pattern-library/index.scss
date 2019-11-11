@@ -1,6 +1,6 @@
 /**
  * This file houses styles specifically for the pattern library documentation.
- * All styles are namespaced by `S_`. If you'd like to change this you can with
+ * All styles are namespaced by `EP_`. If you'd like to change this you can with
  * a global find and replace. 
  *
  * These styles are not loaded on user facing pages.
@@ -8,7 +8,7 @@
 
 @import 'prism-code-highlighting.scss';
 
-.S_layout {
+.EP_layout {
   background: #fff;
   display: flex;
   height: 100%;
@@ -30,12 +30,12 @@
   }
 }
 
-.S_content {
+.EP_content {
   padding: 1em;
   flex-grow: 1;
 }
 
-.S_side-nav {
+.EP_side-nav {
   background: #eee;
   flex-basis:10em;
   flex-grow: 0;
@@ -44,25 +44,25 @@
   padding: 1em;
 }
 
-.S_side-nav__section {
+.EP_side-nav__section {
   padding-bottom: 2em;
 }
 
-.S_pattern {
+.EP_pattern {
   background: #ddd;
   padding: 0.5em;
 }
 
-.S_pattern__example {
+.EP_pattern__example {
   background: #fff;
   padding: 1em;
 }
 
-.S_pattern__code {
+.EP_pattern__code {
   padding-top: 0.5em;
 }
 
-.S_prototype-listing {
+.EP_prototype-listing {
   display: flex;
 }
 
@@ -71,14 +71,14 @@
   --S-preview-height: 568px;
 }
 
-.S_preview {
+.EP_preview {
   display: block;
   height: calc(var(--S-preview-height) / 2);
   overflow: hidden;
   width: calc(var(--S-preview-width) / 2);
 }
 
-.S_preview__iframe {
+.EP_preview__iframe {
   height: var(--S-preview-height);
   pointer-events: none;
   transform: scale(0.5);
