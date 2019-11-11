@@ -32,6 +32,7 @@ Once you've copied this project run the following commands to start working on y
 10. Hide prototypes/patterns
 11. Sort prototypes/patterns
 12. Allow iFraming of patterns
+13. Refactor `reset.scss` (details in file)
 
 ## Ideas
 
