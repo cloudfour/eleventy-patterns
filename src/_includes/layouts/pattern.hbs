@@ -2,12 +2,14 @@
 layout: layouts/pattern-library
 ---
 
-<h1>{{title}}</h1>
+<div class="EM_u_stagger-items">
+  <h1>{{title}}</h1>
 
-{{{ content }}}
+  {{{ content }}}
 
-{{#each collections.patternExamples}}
-  {{#if (isExamplePath this.inputPath ../page.inputPath)}}
-    {{> layouts/pattern-example this}}
-  {{/if}}
-{{/each}}
+  {{#each collections.patternExamples}}
+    {{#if (isExamplePath this.inputPath ../page.inputPath)}}
+      {{> layouts/pattern-example this}}
+    {{/if}}
+  {{/each}}
+</div>

@@ -1,13 +1,14 @@
-<h2>{{data.title}}</h2>
+<div class="EM_u_stagger-items">
+  <h2>{{data.title}}</h2>
 
-{{{markdown data.notes}}}
+  {{{markdown data.notes}}}
 
-<figure class="EP_pattern">
-  <div class="EP_pattern__example">
-    {{{ templateContent }}}
-  </div>
-  <pre class="EP_pattern__code"><code>
-    {{~{syntaxHighlight (pretty this.templateContent) 'html'}~}}
-  </code></pre>
-</figure>
-
+  <figure class="EP_pattern">
+    <div class="EP_pattern__example">
+      {{{ templateContent }}}
+    </div>
+    <pre class="EP_pattern__code"><code>
+      {{~{syntaxHighlight (pretty this.templateContent) 'html'}~}}
+    </code></pre>
+  </figure>
+</div>

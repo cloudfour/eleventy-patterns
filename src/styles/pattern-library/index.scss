@@ -6,7 +6,8 @@
  * These styles are not loaded on user facing pages.
  */
 
-@import 'prism-code-highlighting.scss';
+ @import 'prism-code-highlighting.scss';
+ @import 'utilities/index.scss';
 
 :root {
   /* System Fonts as used by GitHub */
@@ -20,14 +21,6 @@
   display: flex;
   font-family: var(--font-system);
   height: 100%;
-
-  h1, h2, h3 {
-    margin-bottom: 1em;
-  }
-
-  p, ul {
-    margin-bottom: 1em;
-  } 
 
   li {
     margin-left: 1em;
@@ -52,8 +45,8 @@
   padding: 1em;
 }
 
-.EP_side-nav__section {
-  padding-bottom: 2em;
+.EP_side-nav__link {
+  display: block;
 }
 
 .EP_pattern {

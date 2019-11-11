@@ -4,39 +4,35 @@ styles:
 - /styles/pattern-library/index
 ---
 <div class="EP_layout">
-  <aside class="EP_side-nav">
-    <nav>
-      <div class="EP_side-nav__section">
-        <h3 class="EP_side-nav__heading">
-          <a href="/patterns">
-            Patterns
-          </a>
-        </h3>
+  <aside class="EP_side-nav ">
+    <nav class="EM_u_stagger-items">
+      <h3 class="EP_side-nav__heading">
+        <a href="/patterns">
+          Patterns
+        </a>
+      </h3>
 
-        {{#each collections.patterns}}
-          <a href="{{url url}}" class="EP_side-nav__link">
-            {{data.title}}
-          </a>
-        {{/each}}
-      </div>
+      {{#each collections.patterns}}
+        <a href="{{url url}}" class="EP_side-nav__link">
+          {{data.title}}
+        </a>
+      {{/each}}
 
-      <div class="EP_side-nav__section">
-        <h3 class="EP_side-nav__heading">
-          <a href="/prototypes">
-            Prototypes
-          </a>
-        </h3>
+      <h3 class="EP_side-nav__heading">
+        <a href="/prototypes">
+          Prototypes
+        </a>
+      </h3>
 
-        {{#each collections.prototypes}}
-          <a href="{{url url}}" class="EP_side-nav__link">
-            {{data.title}}
-          </a>
-        {{/each}}
-      </div>
+      {{#each collections.prototypes}}
+        <a href="{{url url}}" class="EP_side-nav__link">
+          {{data.title}}
+        </a>
+      {{/each}}
     </nav>
   </aside>
 
-  <main class="EP_content">
+  <main class="EP_content EM_u_stagger-items">
     {{{ content }}}
   </main>
 </div>
