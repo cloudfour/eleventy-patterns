@@ -3,12 +3,10 @@ title: Pattern Library
 layout: layouts/pattern-library
 ---
 
-<div class="container">
-  <div class="container__content">
-    <h1>Patterns</h1>
+<h1>Patterns</h1>
 
-    <p>This boilerplate includes scaffolding for a basic pattern library.</p>
+<p>This boilerplate includes scaffolding for a basic pattern library.</p>
 
-    <p>View <a href="pattern-template">Pattern Template</a> for an example.</p>
-  </div>
-</div>
+{{#each collections.patterns}}
+  {{> layouts/pattern-listing this}}
+{{/each}}
