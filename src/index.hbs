@@ -3,9 +3,6 @@ title: Hello World
 layout: layouts/pattern-library
 ---
 
-<h1>Eleventy Patterns</h1>
+{{!-- You can replace the line below with your home page content --}}
 
-<p>
-  <b>(WIP)</b>
-  A basic JAMStack setup supporting a pattern library and a prototyping environment. 
-</p>
+{{{ markdown (readFileContents 'README.md') }}}
