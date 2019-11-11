@@ -1,8 +1,13 @@
 .EP_layout {
   background: #fff;
   display: flex;
+  flex-direction: column;
   font-family: var(--font-system);
   height: 100%;
+
+  @media(min-width: 40em) {
+    flex-direction: row;
+  }
 }
 
 .EP_layout__content {
