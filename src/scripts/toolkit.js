@@ -1,1 +1,1 @@
-import '../patterns/pattern-template/pattern-template.js';
+import * as patterns from '../patterns/**/*.js';
