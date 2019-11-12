@@ -30,6 +30,7 @@
     "require-dir": "^1.2.0",
     "rollup": "^1.26.3",
     "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-glob-import": "^0.4.4",
     "slug": "^1.1.0"
   },
   "scripts": {

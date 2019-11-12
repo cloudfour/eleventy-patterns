@@ -14,14 +14,7 @@ gulp.task('removeExamples', async cb => {
     'src/prototypes/prototype-example',
   ]);
 
-  // This JavaScript is imported into a bundle. We need remove that import
-  // statement.
-  await replace({
-    files: 'src/scripts/toolkit.js',
-    from: "import '../patterns/pattern-template/pattern-template.js';",
-    to: "",
-  });
-
+  // Signal completion
   cb();
 });
 
