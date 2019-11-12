@@ -3,9 +3,9 @@ title: Pattern Library
 layout: layouts/pattern-library
 ---
 
-<h1>Patterns</h1>
+{{!-- You can replace the line below with your page content --}}
 
-<p>This boilerplate includes scaffolding for a basic pattern library.</p>
+{{{ markdown (readFileContents 'src/patterns/README.md') }}}
 
 {{#each collections.patterns}}
   {{> layouts/pattern-listing this}}

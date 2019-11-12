@@ -15,6 +15,7 @@
 11. Sort prototypes/patterns
 12. Allow iFraming of patterns
 13. Refactor `reset.scss` (details in file)
+14. Host this on Netlify!
 
 ## Ideas
 
