@@ -10,7 +10,7 @@ const replace = require('replace-in-file');
 gulp.task('removeExamples', async cb => {
   // Delete the directories of the example content
   await del([
-    'src/patterns/pattern-template',
+    'src/patterns/pattern-example',
     'src/prototypes/prototype-example',
   ]);
 

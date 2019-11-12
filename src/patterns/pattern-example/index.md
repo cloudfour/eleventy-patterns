@@ -1,5 +1,5 @@
 ---
-title: Pattern Template
+title: Pattern Example
 layout: layouts/pattern
 ---
 
