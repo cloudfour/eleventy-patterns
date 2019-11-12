@@ -1,7 +1,8 @@
 var gulp = require('gulp');
 var rollup = require('gulp-better-rollup');
 var babel = require('rollup-plugin-babel');
- 
+const globImport = require('rollup-plugin-glob-import');
+
 /**
  * A gulp task to process our javascript. 
  * 
@@ -12,7 +13,10 @@ gulp.task('js', () => {
     .pipe(
       rollup(
         {
-          plugins: [babel()]
+          plugins: [
+            babel(),
+            globImport(),
+          ],
         }, 
         {
           format: 'iife',
