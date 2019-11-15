@@ -3,5 +3,17 @@
     <iframe class="EP_preview__iframe" src="{{url url}}"></iframe>
   </a>
   
-  <h2>{{data.title}}</h2>
+  <div class="EM_u_stagger-items">
+    <h2>{{data.title}}</h2>
+
+    {{#if data.labels}}
+      <div>
+        {{#each data.labels}}
+          <span class="label label--{{this}}">
+            {{this}}
+          </span>
+        {{/each}}
+      </div>
+    {{/if}}
+  </div>
 </section>

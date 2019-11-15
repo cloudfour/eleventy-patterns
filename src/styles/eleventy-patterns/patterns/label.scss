@@ -1,0 +1,27 @@
+:root {
+  --label-border-width: 0.3em;
+}
+
+.label {
+  background: var(--color-light-grey);
+  border-radius: 0.1em;
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  margin-right: 0.5em;
+}
+
+.label--wip {
+  border-left: var(--label-border-width) solid var(--color-dark-grey);
+}
+
+.label--approved {
+  border-left: var(--label-border-width) solid var(--color-success);
+}
+
+.label--archived {
+  border-left: var(--label-border-width) solid var(--color-danger);
+}
+
+.label--patternready {
+  border-left: var(--label-border-width) solid var(--color-misc);
+}

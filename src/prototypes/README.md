@@ -24,3 +24,8 @@ In addition to the default [Eleventy Frontmatter](https://www.11ty.io/docs/data-
 1. `title`: Used in the browser tab and when the prototype is listed below.
 2. `hide`: Prevent the prototype from being listed on this page.
 3. `order`: Define the order of prototypes. Will fall back to sorting by file names if not set
+4. `labels`: A list of labels to display on a prototype listing:
+    - `wip`: A work in progress
+    - `approved`: An approved prototype
+    - `patternready`: A prototype that has been fully built with patterns and is ready to ship 
+    - `archived`: An old prototype that will be removed soon.

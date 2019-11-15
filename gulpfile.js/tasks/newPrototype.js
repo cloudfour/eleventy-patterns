@@ -35,6 +35,8 @@ gulp.task('newPrototype', cb => {
     const markupFrontmatter = `
 ---
 title: ${title}
+labels:
+- wip
 ---
 `.trim();
 
