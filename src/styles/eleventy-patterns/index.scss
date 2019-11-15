@@ -7,8 +7,8 @@
  */
 
  @import 'prism-code-highlighting.scss';
- @import 'patterns/index.scss';
- @import 'utilities/index.scss';
+ @import 'patterns/**/*.scss';
+ @import 'utilities/**/*.scss';
 
 :root {
   /* System Fonts as used by GitHub */
