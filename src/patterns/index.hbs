@@ -8,7 +8,9 @@ layout: layouts/pattern-library
 {{{ markdown (readFileContents 'src/patterns/README.md') }}}
 
 {{#each collections.patterns}}
-  {{#unless data.hide}}
-    {{> layouts/pattern-listing this}}
-  {{/unless}}
+  <ul class="EP_u_list-reset">
+    {{#unless data.hide}}
+      {{> layouts/pattern-listing this}}
+    {{/unless}}
+  </ul>
 {{/each}}
