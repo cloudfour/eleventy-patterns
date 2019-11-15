@@ -25,18 +25,33 @@ const questions = [
     },
     // TODO: Slug validation
   },
+  {
+    // TODO: Support multi-line input
+    name: 'notes',
+    type: 'input',
+    message: 'Notes (optional)',
+  },
 ];
 
 gulp.task('newPrototype', cb => {
-  return inquirer.prompt(questions).then(({title, slug}) => {
+  return inquirer.prompt(questions).then(({title, slug, notes}) => {
     const prototypesRoot = 'src/prototypes/';
     const prototypesPath = `${prototypesRoot}/${slug}`;
 
-    const markupFrontmatter = `
----
+    let markupFrontmatter = `---
 title: ${title}
 labels:
 - wip
+`;
+
+if(notes) {
+  markupFrontmatter += `
+notes:
+  ${notes}
+`
+}
+
+markupFrontmatter += `
 ---
 `.trim();
 
