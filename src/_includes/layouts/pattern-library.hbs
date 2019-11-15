@@ -5,32 +5,36 @@ styles:
 ---
 <div class="EP_layout">
   <aside class="EP_layout__sidebar">
-    <nav class="EM_u_stagger-items">
+    <nav class="EP_nav">
       <h2>
         <a href="/">
           Eleventy Patterns
         </a>
       </h2>
 
-      <h3>
-        <a href="/prototypes">
-          Prototypes
-        </a>
-      </h3>
-
-      <h3>
-        <a href="/patterns">
-          Patterns
-        </a>
-      </h3>
-
-      {{#each collections.patterns}}
-        {{#unless data.hide}}
-          <a href="{{url url}}" class="EP_nav__link">
-            {{data.title}}
+      <div class="EP_nav__category">
+        <h3>
+          <a href="/prototypes">
+            Prototypes
           </a>
-        {{/unless}}
-      {{/each}}
+        </h3>
+      </div>
+
+      <div class="EM_u_stagger-items EP_nav__category">
+        <h3>
+          <a href="/patterns">
+            Patterns
+          </a>
+        </h3>
+
+        {{#each collections.patterns}}
+          {{#unless data.hide}}
+            <a href="{{url url}}" class="EP_nav__link">
+              {{data.title}}
+            </a>
+          {{/unless}}
+        {{/each}}
+      </div>
     </nav>
   </aside>
 
