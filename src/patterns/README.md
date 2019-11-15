@@ -26,3 +26,10 @@ By including all of these pieces, you get the following:
 - Documentation for your new pattern.
 
 Creating patterns can be streamlined by running `npx gulp newPattern` in your terminal. This will ask you a few questions, and then scaffold out the files required for your new pattern.
+
+## Pattern Frontmatter
+
+In addition to the default [Eleventy Frontmatter](https://www.11ty.io/docs/data-frontmatter/), we've defined a few other options you can configure by setting them on your your `index.md` file.
+
+1. `title`: Used in the browser tab and when the prototype is listed below or in the sidebar.
+2. `hide`: Prevent the prototype from being listed on this page or in the sidebar.

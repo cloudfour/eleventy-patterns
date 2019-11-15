@@ -16,3 +16,10 @@ prototypes
 If you include these three pieces and follow this naming convention an HTML page skeleton will be built that pulls in these assets and wraps your prototype content. A link to the prototype will automatically be added to this page.
 
 This process can be streamlined by running the `npx gulp newPrototype` command in your terminal. This command will ask you for a title and slug and then scaffold out a new prototype for you.
+
+## Prototype Frontmatter
+
+In addition to the default [Eleventy Frontmatter](https://www.11ty.io/docs/data-frontmatter/), we've defined a few other options you can configure by setting them on your your `index.hbs` file.
+
+1. `title`: Used in the browser tab and when the prototype is listed below.
+2. `hide`: Prevent the prototype from being listed on this page.

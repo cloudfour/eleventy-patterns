@@ -18,22 +18,18 @@ styles:
         </a>
       </h3>
 
-      {{#each collections.patterns}}
-        <a href="{{url url}}" class="EP_nav__link">
-          {{data.title}}
-        </a>
-      {{/each}}
-
       <h3>
         <a href="/prototypes">
           Prototypes
         </a>
       </h3>
 
-      {{#each collections.prototypes}}
-        <a href="{{url url}}" class="EP_nav__link">
-          {{data.title}}
-        </a>
+      {{#each collections.patterns}}
+        {{#unless data.hide}}
+          <a href="{{url url}}" class="EP_nav__link">
+            {{data.title}}
+          </a>
+        {{/unless}}
       {{/each}}
     </nav>
   </aside>
