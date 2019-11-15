@@ -2,7 +2,7 @@
   background: #fff;
   display: flex;
   flex-direction: column;
-  font-family: var(--font-system);
+  font-family: var(--EP_font-system);
   height: 100%;
 
   @media(min-width: 40em) {
@@ -16,7 +16,7 @@
 }
 
 .EP_layout__sidebar {
-  background: var(--color-light-grey);
+  background: var(--EP_color-light-grey);
   flex: 1;
   height: 100%;
   padding: 2em;

@@ -4,7 +4,7 @@
  */
 
 .EP_pattern {
-  background: var(--color-med-grey);
+  background: var(--EP_color-med-grey);
   padding: 0.5em;
 }
 
@@ -14,6 +14,6 @@
 }
 
 .EP_pattern__code {
-  font-family: var(--font-monospace);
+  font-family: var(--EP_font-monospace);
   padding-top: 0.5em;
 }
