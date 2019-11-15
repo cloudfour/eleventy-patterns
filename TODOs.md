@@ -8,9 +8,9 @@
 6. Common hbs helpers
 7. Code 
     - code indentation
-    - HBS code examples
+    - HBS/template language code examples
 8. Add support for other template languages (Liquid?)
-9. Allow tags/labels on prototypes and patterns
-10. Allow iFraming of patterns
+9. Allow iFraming of patterns
+10. New `card` pattern for listing pages
 11. Refactor `reset.scss` (details in file)
 12. Host this on Netlify!
