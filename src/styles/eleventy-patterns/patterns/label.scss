@@ -1,8 +1,8 @@
 :root {
-  --label-border-width: 0.3em;
+  --EP_label-border-width: 0.3em;
 }
 
-.label {
+.EP_label {
   background: var(--EP_color-light-grey);
   border-radius: 0.1em;
   display: inline-block;
@@ -10,18 +10,18 @@
   margin-right: 0.5em;
 }
 
-.label--wip {
-  border-left: var(--label-border-width) solid var(--EP_color-dark-grey);
+.EP_label--wip {
+  border-left: var(--EP_label-border-width) solid var(--EP_color-dark-grey);
 }
 
-.label--approved {
-  border-left: var(--label-border-width) solid var(--EP_color-success);
+.EP_label--approved {
+  border-left: var(--EP_label-border-width) solid var(--EP_color-success);
 }
 
-.label--archived {
-  border-left: var(--label-border-width) solid var(--EP_color-danger);
+.EP_label--archived {
+  border-left: var(--EP_label-border-width) solid var(--EP_color-danger);
 }
 
-.label--patternready {
-  border-left: var(--label-border-width) solid var(--EP_color-misc);
+.EP_label--patternready {
+  border-left: var(--EP_label-border-width) solid var(--EP_color-misc);
 }
