@@ -1,7 +1,13 @@
-<section> 
+{{!-- TODO: This whole thing should be a clickable card --}}
+
+<section class="EM_u_stagger-items"> 
   <h2>
     <a href="{{url url}}">
       {{data.title}}
     </a>
   </h2>
+
+  {{consoleLog this}}
+
+  {{{markdown this.templateContent}}}
 </section>
