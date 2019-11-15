@@ -7,15 +7,13 @@
 5. Linting
 6. Common hbs helpers
 7. Code 
-  - code indentation
-  - HBS code examples
+    - code indentation
+    - HBS code examples
 8. Add support for other template languages (Liquid?)
 9. Allow tags/labels on prototypes and patterns
-10. Hide prototypes/patterns
-11. Sort prototypes/patterns
-12. Allow iFraming of patterns
-13. Refactor `reset.scss` (details in file)
-14. Host this on Netlify!
+10. Allow iFraming of patterns
+11. Refactor `reset.scss` (details in file)
+12. Host this on Netlify!
 
 ## Ideas
 
