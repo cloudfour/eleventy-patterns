@@ -27,7 +27,7 @@ styles:
           </a>
         </h3>
 
-        {{#each collections.patterns}}
+        {{#each (sortCollection collections.patterns)}}
           {{#unless data.hide}}
             <a href="{{url url}}" class="EP_nav__link">
               {{data.title}}

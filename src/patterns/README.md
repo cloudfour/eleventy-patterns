@@ -33,3 +33,4 @@ In addition to the default [Eleventy Frontmatter](https://www.11ty.io/docs/data-
 
 1. `title`: Used in the browser tab and when the prototype is listed below or in the sidebar.
 2. `hide`: Prevent the prototype from being listed on this page or in the sidebar.
+3. `order`: Define the order of patterns. Will fall back to sorting by file names if not set
