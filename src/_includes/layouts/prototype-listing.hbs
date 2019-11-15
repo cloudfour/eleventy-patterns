@@ -1,12 +1,14 @@
-{{!-- TODO: This whole thing should be a clickable card --}}
-
-<li class="EP_prototype-listing">
-  <a class="EP_prototype-listing__graphic EP_preview" href="{{url url}}">
+<li class="EP_card">
+  <span class="EP_card__graphic EP_preview">
     <iframe class="EP_preview__iframe" src="{{url url}}"></iframe>
-  </a>
+  </span>
   
-  <div class="EM_u_stagger-items">
-    <h2>{{data.title}}</h2>
+  <div class="EP_card__content EP_u_stagger-items">
+    <h2>
+      <a class="EP_card__primary-action" href="{{url url}}">
+        {{data.title}}
+      </a>
+    </h2>
 
     {{#if data.labels}}
       <div>

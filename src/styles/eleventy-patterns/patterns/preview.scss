@@ -18,6 +18,7 @@
 }
 
 .EP_preview__iframe {
+  border: none;
   height: var(--EP_preview-height);
   pointer-events: none;
   transform: scale(0.5);

@@ -1,0 +1,39 @@
+/**
+ * Semantic card pattern based upon https://inclusive-components.design/cards/
+ */
+
+.EP_card {
+  border: 1px solid var(--EP_color-light-grey);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.EP_card:hover,
+.EP_card:focus {
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
+
+.EP_card__content {
+  padding: 1em;
+}
+
+.EP_card__graphic {
+  transition: transform 0.3s ease-out;
+}
+
+.EP_card__primary-action::after {
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.EP_card__secondary-action {
+  position: relative;
+  z-index: 1;
+}
