@@ -14,7 +14,3 @@
 10. Allow iFraming of patterns
 11. Refactor `reset.scss` (details in file)
 12. Host this on Netlify!
-
-## Ideas
-
-1. Task to stub out new pattern/prototype
