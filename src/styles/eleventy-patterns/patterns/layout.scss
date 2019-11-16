@@ -1,29 +1,31 @@
-.EP_layout {
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  font-family: var(--EP_font-system);
-  height: 100%;
-
-  @media(min-width: 40em) {
-    flex-direction: row;
-  }
+:root {
+  --EP_sidebar-width: 17em;
 }
 
-.EP_layout__content {
+.EP_layout {
+  background: #fff;
+  font-family: var(--EP_font-system);
+}
+
+.EP_layout__content,
+.EP_layout__sidebar {
   padding: 2em;
-  flex-grow: 1;
 }
 
 .EP_layout__sidebar {
   background: var(--EP_color-light-grey);
-  flex: 1;
-  height: 100%;
-  padding: 2em;
+}
 
-  @media(min-width: 40em) {
-    flex-basis:17em;
-    flex-grow: 0;
-    flex-shrink: 0;
+@media(min-width: 40em) {
+  .EP_layout__sidebar {
+    bottom: 0;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: var(--EP_sidebar-width);
+  }
+
+  .EP_layout__content {
+    margin-left: var(--EP_sidebar-width);
   }
 }
