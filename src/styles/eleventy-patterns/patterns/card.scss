@@ -22,6 +22,7 @@
 
 .EP_card__graphic {
   transition: transform 0.3s ease-out;
+  flex-shrink: 0;
 }
 
 .EP_card__primary-action::after {
