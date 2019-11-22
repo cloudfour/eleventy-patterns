@@ -38,8 +38,8 @@
   },
   "scripts": {
     "start": "npx gulp",
-    "eslint": "npx eslint \"**/*.js\"",
-    "stylelint": "npx stylelint \"**/*.scss\""
+    "lint": "npx eslint \"**/*.js\" && npx stylelint \"**/*.scss\"",
+    "lint-fix": "npx eslint \"**/*.js\" --fix && npx stylelint \"**/*.scss\" --fix"
   },
   "repository": {
     "type": "git",
