@@ -39,7 +39,7 @@
   "scripts": {
     "start": "npx gulp",
     "eslint": "npx eslint \"**/*.js\"",
-    "stylelint": "npx stylelint \"**/*.css\""
+    "stylelint": "npx stylelint \"**/*.scss\""
   },
   "repository": {
     "type": "git",

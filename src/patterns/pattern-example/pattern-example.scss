@@ -19,23 +19,23 @@
 
 .pattern-example:active {
   animation: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
   transform: scale(0.95);
-  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
 }
 
 @keyframes pulse {
   0% {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     transform: scale(0.975);
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
   }
 
   50% {
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.25);
     transform: scale(1.025);
-    box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.25);
   }
 
   100% {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     transform: scale(0.975);
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
   }
 }
