@@ -3,7 +3,7 @@ const browserSync = require('browser-sync').get(
   require('../../package.json').name
 );
 
-gulp.task('reload', cb => {
+gulp.task('reload', callback => {
   browserSync.reload();
-  cb();
+  callback();
 });

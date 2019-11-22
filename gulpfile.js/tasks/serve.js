@@ -6,6 +6,7 @@ const browserSync = require('browser-sync').get(
 gulp.task('serve', () => {
   browserSync.init({
     notify: false,
-    server: { baseDir: './dist' },
+    // eslint-disable-next-line unicorn/prevent-abbreviations
+    server: { baseDir: './dist' }
   });
 });

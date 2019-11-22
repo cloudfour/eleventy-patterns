@@ -1,6 +1,6 @@
-module.exports = (collection) => {
+module.exports = collection => {
   return collection.sort((a, b) => {
-    if(a.data.order !== b.data.order) {
+    if (a.data.order !== b.data.order) {
       return a.data.order > b.data.order;
     }
 

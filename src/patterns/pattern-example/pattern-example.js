@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   buttons.forEach(button => {
     button.addEventListener('click', () => {
-      alert('You have clicked a pattern example button!')
+      // eslint-disable-next-line no-alert, no-undef
+      alert('You have clicked a pattern example button!');
     });
   });
 });
