@@ -12,7 +12,7 @@
 
 .EP_card:hover,
 .EP_card:focus {
-  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
 }
 
@@ -21,13 +21,13 @@
 }
 
 .EP_card__graphic {
-  transition: transform 0.3s ease-out;
   flex-shrink: 0;
+  transition: transform 0.3s ease-out;
 }
 
 .EP_card__primary-action::after {
   bottom: 0;
-  content: '';
+  content: "";
   left: 0;
   position: absolute;
   right: 0;
