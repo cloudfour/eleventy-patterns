@@ -8,11 +8,11 @@ const questions = [
     name: 'title',
     type: 'input',
     message: 'Prototype Title',
-    validate: function (input) {
-      if (input.trim().length) {
+    validate: function(input) {
+      if (input.trim().length > 0) {
         return true;
       }
-      
+
       return 'Please enter a title.';
     }
   },
@@ -20,21 +20,21 @@ const questions = [
     name: 'slug',
     type: 'input',
     message: 'Prototype Slug',
-    default: function (answers) {
+    default: function(answers) {
       return slug(answers.title).toLowerCase();
-    },
+    }
     // TODO: Slug validation
   },
   {
     // TODO: Support multi-line input
     name: 'notes',
     type: 'input',
-    message: 'Notes (optional)',
-  },
+    message: 'Notes (optional)'
+  }
 ];
 
-gulp.task('newPrototype', cb => {
-  return inquirer.prompt(questions).then(({title, slug, notes}) => {
+gulp.task('prototype', callback => {
+  return inquirer.prompt(questions).then(({ title, slug, notes }) => {
     const prototypesRoot = 'src/prototypes/';
     const prototypesPath = `${prototypesRoot}/${slug}`;
 
@@ -44,27 +44,27 @@ labels:
 - wip
 `;
 
-if(notes) {
-  markupFrontmatter += `
+    if (notes) {
+      markupFrontmatter += `
 notes:
   ${notes}
-`
-}
+`;
+    }
 
-markupFrontmatter += `
+    markupFrontmatter += `
 ---
 `.trim();
 
-    if(!fs.existsSync(prototypesPath)) {
+    if (fs.existsSync(prototypesPath)) {
+      console.error('Error: A prototype with that slug already exists.');
+
+      callback();
+    } else {
       fs.mkdirSync(prototypesPath);
 
-      fs.writeFile(`${prototypesPath}/index.hbs`, markupFrontmatter, cb);
-      fs.writeFile(`${prototypesPath}/styles.scss`, '', cb);
-      fs.writeFile(`${prototypesPath}/functions.js`, '', cb);
-    } else {
-      console.error('Error: A prototype with that slug already exists.')
-
-      cb();
+      fs.writeFile(`${prototypesPath}/index.hbs`, markupFrontmatter, callback);
+      fs.writeFile(`${prototypesPath}/styles.scss`, '', callback);
+      fs.writeFile(`${prototypesPath}/functions.js`, '', callback);
     }
   });
 });

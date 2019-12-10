@@ -11,6 +11,8 @@
     "camelcase": "^5.3.1",
     "del": "^5.1.0",
     "eslint": "^5.16.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "fast-glob": "^3.0.4",
     "gulp": "^4.0.2",
     "gulp-better-rollup": "^4.0.1",
@@ -25,17 +27,20 @@
     "node-sass": "^4.12.0",
     "npm": "^6.11.3",
     "path": "^0.12.7",
-    "prettier": "^1.18.2",
+    "prettier": "^1.19.1",
     "prismjs": "^1.17.1",
-    "replace-in-file": "^4.2.0",
     "require-dir": "^1.2.0",
     "rollup": "^1.26.3",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-glob-import": "^0.4.4",
-    "slug": "^1.1.0"
+    "slug": "^1.1.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-cloudfour-suit": "^2.0.0"
   },
   "scripts": {
-    "start": "npx gulp"
+    "start": "npx gulp",
+    "lint": "npx eslint \"**/*.js\" && npx stylelint \"**/*.scss\"",
+    "lint-fix": "npx eslint \"**/*.js\" --fix && npx stylelint \"**/*.scss\" --fix"
   },
   "repository": {
     "type": "git",
@@ -46,5 +51,8 @@
   "bugs": {
     "url": "https://github.com/cloudfour/eleventy-patterns/issues"
   },
-  "homepage": "https://github.com/cloudfour/eleventy-patterns#readme"
+  "homepage": "https://github.com/cloudfour/eleventy-patterns#readme",
+  "dependencies": {
+    "@cloudfour/eslint-config": "^1.0.0"
+  }
 }

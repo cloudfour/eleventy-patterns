@@ -53,7 +53,7 @@ module.exports = value =>
       'acronym',
       'big',
       'strike',
-      'tt',
+      'tt'
     ],
-    unformatted: ['code', 'pre'],
+    unformatted: ['code', 'pre']
   });

@@ -1,18 +1,17 @@
 /**
  * This file houses styles specifically for the pattern library documentation.
  * All styles are namespaced by `EP_`. If you'd like to change this you can with
- * a global find and replace. 
+ * a global find and replace.
  *
  * These styles are not loaded on user facing pages.
  */
 
- @import 'prism-code-highlighting.scss';
- @import 'config/**/*.scss';
- @import 'patterns/**/*.scss';
- @import 'utilities/**/*.scss';
+@import "prism-code-highlighting.scss";
+@import "config/**/*.scss";
+@import "patterns/**/*.scss";
+@import "utilities/**/*.scss";
 
-
-
-body, html {
+body,
+html {
   height: 100%;
 }
