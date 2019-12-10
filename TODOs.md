@@ -4,7 +4,7 @@
 2. Add service worker/PWA support — probably workbox
 3. Better default styles
 4. Better navigation (+ small screen nav)
-5. Linting
+5. Enforce linting with Husky or Github actions
 6. Common hbs helpers
 7. Code 
     - code indentation
