@@ -10,10 +10,10 @@ const Handlebars = require('handlebars');
  * {{/iterate}}
  */
 
-module.exports = function (num, block) {
+module.exports = function(number, block) {
   let result = '';
 
-  for (let i = 0; i < num; i++) {
+  for (let i = 0; i < number; i++) {
     let data = Handlebars.createFrame(block.data || {});
     data.index = i;
     data.count = i + 1;
@@ -21,4 +21,4 @@ module.exports = function (num, block) {
   }
 
   return result;
-}
+};
