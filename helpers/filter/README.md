@@ -1,1 +1,0 @@
-Include handlebars helpers here. Each file should be a single exported function.

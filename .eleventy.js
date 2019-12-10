@@ -2,6 +2,7 @@ const path = require('path');
 const fg = require('fast-glob');
 const fs = require('fs');
 const Handlebars = require('handlebars');
+const camelCase = require('camelcase');
 
 const helpers = require('./helpers');
 
@@ -22,9 +23,20 @@ module.exports = eleventyConfig => {
     return collection.getFilteredByGlob('src/patterns/**/examples/**/*.hbs');
   });
 
-  // Register handlebars helpers
-  Object.keys(helpers).forEach(key => {
-    eleventyConfig.addHandlebarsHelper(key, helpers[key]);
+  // Register helpers
+  Object.keys(helpers).forEach(group => {
+    // Build method name from key (filter -> addFilter)
+    const method = `add${camelCase(group, { pascalCase: true })}`;
+    
+    // If that method doesn't exist, skip this helper group
+    if (typeof eleventyConfig[method] !== 'function') {
+      return;
+    }
+
+    // Loop through every function in this group and add it as that helper
+    Object.keys(helpers[group]).forEach(name => {
+      eleventyConfig[method](name, helpers[group][name]);
+    });
   });
 
   // Register handlebars partials
