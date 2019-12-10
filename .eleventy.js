@@ -3,7 +3,7 @@ const fg = require('fast-glob');
 const fs = require('fs');
 const Handlebars = require('handlebars');
 const camelCase = require('camelcase');
-
+const md = require('markdown-it')({ html: true });
 const helpers = require('./helpers');
 
 module.exports = eleventyConfig => {
@@ -21,6 +21,20 @@ module.exports = eleventyConfig => {
   });
   eleventyConfig.addCollection('patternExamples', function(collection) {
     return collection.getFilteredByGlob('src/patterns/**/examples/**/*.hbs');
+  });
+
+  // Set our own Markdown library. We use the Eleventy default as a starting
+  // point, but setting our own allows us to deviate and coordinate between
+  // what Eleventy uses to compile templates and a filter we can use within
+  // those same templates. Consistency FTW!
+  eleventyConfig.setLibrary('md', md);
+  eleventyConfig.addFilter('markdown', value => {
+    // Only attempt to render strings to avoid errors
+    if (typeof value === 'string') {
+      return md.render(value);
+    }
+
+    return value;
   });
 
   // Register helpers
