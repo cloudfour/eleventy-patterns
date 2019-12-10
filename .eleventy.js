@@ -27,7 +27,7 @@ module.exports = eleventyConfig => {
   Object.keys(helpers).forEach(group => {
     // Build method name from key (filter -> addFilter)
     const method = `add${camelCase(group, { pascalCase: true })}`;
-    
+
     // If that method doesn't exist, skip this helper group
     if (typeof eleventyConfig[method] !== 'function') {
       return;
