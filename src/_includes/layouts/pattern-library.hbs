@@ -1,42 +1,96 @@
 ---
 layout: layouts/base
-styles: 
+styles:
 - /styles/eleventy-patterns/index
+scripts:
+- /scripts/eleventy-scripts/eleventy
 ---
 <div class="EP_layout">
-  <aside class="EP_layout__sidebar">
-    <nav class="EP_nav">
+  <nav class="EP_nav">
+    <div class="EP_header">
       <h2>
         <a href="/">
           Eleventy Patterns
         </a>
       </h2>
+    </div>
 
-      <div class="EP_nav__category">
+    <button class="EP_nav__menu-toggle">Menu</button>
+
+    <ul class="EP_nav__menu">
+      <li class="EP_nav__category">
+        <div class="EP_nav__submenu-toggle">
+          <h3>
+            Prototypes
+          </h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" class="toggle-icon">
+            <path d="M0,0,10,10,20,0Z"/>
+          </svg>
+        </div>
+        <ul class="EP_u_stagger-items EP_nav__submenu">
+          <li class="EP_nav__link">
+            <a href="/prototypes">
+              Prototypes Overview
+            </a>
+          </li>
+          {{#each (sortCollection collections.prototypes)}}
+            {{#unless data.hide}}
+              <li class="EP_nav__link">
+                <a href="{{url url}}">
+                  {{data.title}}
+                </a>
+              </li>
+            {{/unless}}
+          {{/each}}
+        </ul>
+      </li>
+      <li class="EP_nav__category">
+        <div class="EP_nav__submenu-toggle">
+          <h3>
+            Patterns
+          </h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" class="toggle-icon">
+            <path d="M0,0,10,10,20,0Z"/>
+          </svg>
+        </div>
+        <ul class="EP_u_stagger-items EP_nav__submenu">
+          <li class="EP_nav__link">
+            <a href="/patterns">
+              Patterns Overview
+            </a>
+          </li>
+          {{#each (sortCollection collections.patterns)}}
+            {{#unless data.hide}}
+              <li class="EP_nav__link">
+                <a href="{{url url}}">
+                  {{data.title}}
+                </a>
+              </li>
+            {{/unless}}
+          {{/each}}
+        </ul>
+      </li>
+    </ul>
+    <ul class="EP_nav__menu-large">
+      <li class="EP_nav__link">
         <h3>
           <a href="/prototypes">
             Prototypes
           </a>
         </h3>
-      </div>
-
-      <div class="EP_u_stagger-items EP_nav__category">
+      </li>
+      <li class="EP_nav__link">
         <h3>
           <a href="/patterns">
             Patterns
           </a>
         </h3>
+      </li>
+    </ul>
+  </nav>
+  <!-- <aside class="EP_layout__sidebar">
 
-        {{#each (sortCollection collections.patterns)}}
-          {{#unless data.hide}}
-            <a href="{{url url}}" class="EP_nav__link">
-              {{data.title}}
-            </a>
-          {{/unless}}
-        {{/each}}
-      </div>
-    </nav>
-  </aside>
+  </aside> -->
 
   <main class="EP_layout__content EP_u_stagger-items">
     {{{ content }}}
