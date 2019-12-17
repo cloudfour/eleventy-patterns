@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const buttons = [...document.querySelectorAll('.js-pattern-example')];
+  const buttons = [...document.querySelectorAll('.EP_js-pattern-example')];
 
   buttons.forEach(button => {
     button.addEventListener('click', () => {
