@@ -85,7 +85,7 @@ notes:
 
       const examplesJson = `
 {
-"layout": "layouts/base"
+"layout": "layouts/pattern-example--iframed.hbs"
 }
 `;
 
