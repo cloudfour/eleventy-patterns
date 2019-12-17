@@ -3,9 +3,13 @@
 {{{markdown data.notes}}}
 
 <figure class="EP_pattern">
-  <div class="EP_pattern__example">
-    {{{ templateContent }}}
-  </div>
+    {{#if data.iFrameExample}}
+      <iframe src="{{this.url}}" class="EP_pattern__iframe EP_js-resize-iframe"></iframe>
+    {{else}}
+      <div class="EP_pattern__example">
+          {{{ templateContent }}}
+      </div>
+    {{/if}}
   <pre class="EP_pattern__code"><code>
     {{~{syntaxHighlight (pretty this.templateContent) 'html'}~}}
   </code></pre>

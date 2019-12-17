@@ -76,12 +76,18 @@ ${notes}
 ---
 title: ${docTitle}
 layout: layouts/pattern-example
-notes: 
+notes:
   ${docNotes}
 ---
 
 {{>${slug}}}
 `.trim();
+
+      const examplesJson = `
+{
+"layout": "layouts/pattern-example--iframed.hbs"
+}
+`;
 
       if (fs.existsSync(patternsPath)) {
         console.error('Error: A pattern with that slug already exists.');
@@ -106,6 +112,12 @@ notes:
         fs.writeFile(
           `${patternsPath}/examples/${docSlug}.hbs`,
           documentContent,
+          callback
+        );
+
+        fs.writeFile(
+          `${patternsPath}/examples/examples.json`,
+          examplesJson,
           callback
         );
       }

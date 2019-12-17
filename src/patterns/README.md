@@ -33,6 +33,14 @@ Creating patterns can be streamlined by running `npx gulp pattern` in your termi
 
 In addition to the default [Eleventy Frontmatter](https://www.11ty.io/docs/data-frontmatter/), we've defined a few other options you can configure by setting them on your your `index.md` file.
 
-1. `title`: Used in the browser tab and when the prototype is listed below or in the sidebar.
-2. `hide`: Prevent the prototype from being listed on this page or in the sidebar.
+1. `title`: Used in the browser tab and when the pattern is listed below or in the sidebar.
+2. `hide`: Prevent the pattern from being listed on this page or in the sidebar.
 3. `order`: Define the order of patterns. Will fall back to sorting by file names if not set
+
+## Pattern Example Frontmatter
+
+Pattern example files can also use frontmatter to control their display:
+
+1. `title`: Displayed above the example
+2. `order`: Define the order of examples. Will fall back to sorting by file names if not set
+3. `iFrameExample`: Display the example in an iFrame. Can be useful for responsive or full screen patterns.
