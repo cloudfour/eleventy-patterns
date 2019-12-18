@@ -31,7 +31,6 @@
     "require-dir": "^1.2.0",
     "rollup": "^1.26.3",
     "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-glob-import": "^0.4.4",
     "slug": "^1.1.0",
     "stylelint": "^9.10.1",
     "stylelint-config-cloudfour-suit": "^2.0.0"
@@ -54,6 +53,7 @@
   "dependencies": {
     "@cloudfour/eslint-config": "^1.0.0",
     "@rollup/plugin-node-resolve": "^6.0.0",
+    "babel-plugin-import-glob": "^2.0.0",
     "iframe-resizer": "^4.2.8",
     "rollup-plugin-commonjs": "^10.1.0"
   }
