@@ -3,16 +3,32 @@ title: Pattern Library
 layout: layouts/pattern-library
 ---
 
-{{!-- You can replace the line below with your page content --}}
-
-{{{ markdown (readFileContents 'src/patterns/README.md') }}}
-
-<h2>Our Patterns</h2>
-
-{{#each collections.patterns}}
-  <ul class="EP_u_list-reset">
-    {{#unless data.hide}}
-      {{> layouts/pattern-listing this}}
-    {{/unless}}
+<div class="EP_layout__sidebar">
+  <ul class="EP_u_stagger-items EP_sidebar__menu">
+    {{#each (sortCollection collections.patterns)}}
+      {{#unless data.hide}}
+        <li class="EP_sidebar__menu-item">
+          <a href="{{url url}}">
+            {{data.title}}
+          </a>
+        </li>
+      {{/unless}}
+    {{/each}}
   </ul>
-{{/each}}
+</div>
+
+
+<div class="EP_layout__category EP_u_stagger-items">
+  {{!-- You can replace the line below with your page content --}}
+  {{{ markdown (readFileContents 'src/patterns/README.md') }}}
+
+  <h2>Our Patterns</h2>
+
+  {{#each collections.patterns}}
+    <ul class="EP_u_list-reset">
+      {{#unless data.hide}}
+        {{> layouts/pattern-listing this}}
+      {{/unless}}
+    </ul>
+  {{/each}}
+</div>

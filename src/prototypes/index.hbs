@@ -3,16 +3,31 @@ title: Prototypes
 layout: layouts/pattern-library
 ---
 
-{{!-- You can replace the line below with your page content --}}
-
-{{{ markdown (readFileContents 'src/prototypes/README.md') }}}
-
-<h2>Our Prototypes</h2>
-
-{{#each (sortCollection collections.prototypes)}}
-  <ul class="EP_u_list-reset">
-    {{#unless data.hide}}
-      {{> layouts/prototype-listing this}}
-    {{/unless}}
+<div class="EP_layout__sidebar">
+  <ul class="EP_u_stagger-items EP_sidebar__menu">
+    {{#each (sortCollection collections.prototypes)}}
+      {{#unless data.hide}}
+        <li class="EP_sidebar__menu-item">
+          <a href="{{url url}}">
+            {{data.title}}
+          </a>
+        </li>
+      {{/unless}}
+    {{/each}}
   </ul>
-{{/each}}
+</div>
+
+<div class="EP_layout__category EP_u_stagger-items">
+  {{!-- You can replace the line below with your page content --}}
+  {{{ markdown (readFileContents 'src/prototypes/README.md') }}}
+
+  <h2>Our Prototypes</h2>
+
+  {{#each (sortCollection collections.prototypes)}}
+    <ul class="EP_u_list-reset">
+      {{#unless data.hide}}
+        {{> layouts/prototype-listing this}}
+      {{/unless}}
+    </ul>
+  {{/each}}
+</div>

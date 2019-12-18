@@ -1,10 +1,13 @@
 :root {
   --EP_nav-spacing: 1.5rem;
+  --EP_nav-height: 5rem;
 }
 
 .EP_nav {
+  background: white;
   border-bottom: 1px solid var(--EP_color-med-grey);
   max-width: 100%;
+  min-height: var(--EP_nav-height);
   position: relative;
 
   @media (min-width: 800px) {
@@ -12,10 +15,6 @@
     display: flex;
     justify-content: space-between;
   }
-}
-
-.EP_header {
-  padding: var(--EP_nav-spacing);
 }
 
 .EP_nav__category {
@@ -37,7 +36,8 @@
   transform: rotate(180deg);
 }
 
-.EP_nav__submenu {
+.EP_nav__submenu,
+.EP_nav__submenu-large {
   list-style: none;
 }
 
@@ -74,6 +74,7 @@
 }
 
 .EP_nav__menu {
+  list-style: none;
 
   @media (min-width: 800px) {
     display: none;
@@ -87,7 +88,6 @@
 .EP_nav__menu-large {
   display: none;
   list-style: none;
-  padding: var(--EP_nav-spacing);
 
   @media (min-width: 800px) {
     display: flex;
