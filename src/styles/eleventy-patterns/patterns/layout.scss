@@ -9,7 +9,12 @@
   font-family: var(--EP_font-system);
 }
 
+.EP_layout__home {
+  padding: var(--EP_nav-spacing);
+}
+
 .EP_layout__content {
+  border-top: 1px solid var(--EP_color-med-grey);
   position: relative;
 }
 

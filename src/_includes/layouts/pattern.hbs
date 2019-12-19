@@ -2,8 +2,30 @@
 layout: layouts/pattern-library
 ---
 
-<div>
+<div class="EP_layout__sidebar">
+  <ul class="EP_u_stagger-items EP_sidebar__menu">
+    {{#each (sortCollection collections.patterns)}}
+      {{#unless data.hide}}
+        <li class="EP_sidebar__menu-item">
+          <a href="{{url url}}">
+            {{data.title}}
+          </a>
+        </li>
+      {{/unless}}
+    {{/each}}
+  </ul>
+</div>
+
+<div class="EP_layout__category EP_u_stagger-items">
   <h1>{{title}}</h1>
+  <ul class="EP_pattern__menu">
+    {{#each (sortCollection collections.patternExamples)}}
+      <li class="EP_pattern__jump-link">
+        <a href="#pattern-{{@index}}">{{data.title}}</a>
+      </li>
+    {{/each}}
+  </ul>
+
 
   {{{ content }}}
 

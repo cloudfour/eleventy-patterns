@@ -7,11 +7,13 @@ scripts:
 ---
 <div class="EP_layout">
   <nav class="EP_nav">
-    <h2>
-      <a href="/">
-        Eleventy Patterns
-      </a>
-    </h2>
+    <div class="EP_nav__logo">
+      <h2>
+        <a href="/">
+          Eleventy Patterns
+        </a>
+      </h2>
+    </div>
 
     <button class="EP_nav__menu-toggle">Menu</button>
 
@@ -88,10 +90,6 @@ scripts:
   </nav>
 
   <main class="EP_layout__content">
-    <!-- <div class="EP_layout__sidebar">
-    </div> -->
-    <!-- <div class="EP_layout__content EP_u_stagger-items"> -->
-      {{{ content }}}
-    <!-- </div> -->
+    {{{ content }}}
   </main>
 </div>

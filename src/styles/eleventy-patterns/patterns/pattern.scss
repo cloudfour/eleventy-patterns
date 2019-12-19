@@ -1,3 +1,7 @@
+:root {
+  --EP_nav-spacing: 1.5rem;
+}
+
 /**
  * This is starting to get really meta...
  * A pattern for displaying patterns
@@ -6,6 +10,18 @@
 .EP_pattern {
   background: var(--EP_color-med-grey);
   padding: 0.5em;
+}
+
+.EP_pattern__menu {
+  list-style: none;
+}
+
+.EP_pattern__jump-link {
+  display: inline-block;
+
+  &:not(:first-child) {
+    margin-left: var(--EP_nav-spacing);
+  }
 }
 
 .EP_pattern__example {
