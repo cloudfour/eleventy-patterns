@@ -8,12 +8,12 @@ function initMenuToggle() {
 }
 
 function initSubmenuToggle() {
-  const submenuToggle = document.querySelectorAll('.EP_nav__submenu-toggle');
+  const submenuToggle = document.querySelectorAll('.EP_menu__toggle');
 
   submenuToggle.forEach(toggle => {
     toggle.addEventListener('click', () => {
       let target = toggle.nextElementSibling;
-      const toggleIcon = toggle.querySelector('.toggle-icon');
+      const toggleIcon = toggle.querySelector('.EP_menu__toggle-icon');
       target.classList.toggle('is-open');
       toggleIcon.classList.toggle('is-open');
     });

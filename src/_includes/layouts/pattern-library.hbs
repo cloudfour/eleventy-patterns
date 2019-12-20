@@ -7,13 +7,11 @@ scripts:
 ---
 <div class="EP_layout">
   <nav class="EP_nav">
-    <div class="EP_nav__logo">
-      <h2>
-        <a href="/">
-          Eleventy Patterns
-        </a>
-      </h2>
-    </div>
+    <h2>
+      <a href="/">
+        Eleventy Patterns
+      </a>
+    </h2>
 
     <button class="EP_nav__menu-toggle">Menu</button>
 
@@ -24,15 +22,15 @@ scripts:
             Prototypes
           </a>
         </h3>
-        <!-- <div class="EP_nav__submenu-toggle">
+        <!-- <div class="EP_menu__toggle">
           <h3>
             Prototypes
           </h3>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" class="toggle-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" class="EP_menu__toggle-icon">
             <path d="M0,0,10,10,20,0Z"/>
           </svg>
         </div> -->
-        <!-- <ul class="EP_u_stagger-items EP_nav__submenu">
+        <!-- <ul class="EP_u_stagger-items EP_menu">
           <li class="EP_nav__link">
             <a href="/prototypes">
               Prototypes Overview
@@ -55,30 +53,6 @@ scripts:
             Patterns
           </a>
         </h3>
-        <!-- <div class="EP_nav__submenu-toggle">
-          <h3>
-            Patterns
-          </h3>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" class="toggle-icon">
-            <path d="M0,0,10,10,20,0Z"/>
-          </svg>
-        </div> -->
-        <!-- <ul class="EP_u_stagger-items EP_nav__submenu">
-          <li class="EP_nav__link">
-            <a href="/patterns">
-              Patterns Overview
-            </a>
-          </li>
-          {{#each (sortCollection collections.patterns)}}
-            {{#unless data.hide}}
-              <li class="EP_nav__link">
-                <a href="{{url url}}">
-                  {{data.title}}
-                </a>
-              </li>
-            {{/unless}}
-          {{/each}}
-        </ul> -->
       </li>
     </ul>
   </nav>
