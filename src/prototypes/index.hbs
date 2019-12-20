@@ -2,6 +2,27 @@
 title: Prototypes
 layout: layouts/pattern-library
 ---
+<div class="EP_menu-container">
+  <div class="EP_menu__toggle">
+    <h3>
+      Prototypes
+    </h3>
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" class="EP_menu__toggle-icon">
+      <path d="M0,0,10,10,20,0Z"/>
+    </svg>
+  </div>
+  <ul class="EP_u_stagger-items EP_menu">
+    {{#each (sortCollection collections.prototypes)}}
+      {{#unless data.hide}}
+        <li class="EP_menu__item">
+          <a href="{{url url}}">
+            {{data.title}}
+          </a>
+        </li>
+      {{/unless}}
+    {{/each}}
+  </ul>
+</div>
 
 <div class="EP_layout__sidebar">
   <ul class="EP_u_stagger-items EP_sidebar__menu">
