@@ -14,14 +14,12 @@
 
 .EP_pattern__menu {
   list-style: none;
+  margin: 0 -0.5em;
 }
 
 .EP_pattern__jump-link {
   display: inline-block;
-
-  &:not(:first-child) {
-    margin-left: var(--EP_nav-spacing);
-  }
+  padding: 0 0.5em;
 }
 
 .EP_pattern__example {
