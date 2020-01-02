@@ -38,11 +38,18 @@ function encode(rendered) {
  * @todo Consider breaking this into a Sindre Sorhus-style micro library?
  */
 module.exports = (width, height, text) => {
-  return encode(
-    template({
-      width,
-      height: typeof height === 'number' ? height : undefined, // In case of Handlebars options object
-      text: typeof text === 'string' ? text : undefined // In case of Handlebars options object
-    })
-  );
+  /**
+   * In theory we would be able to pass this to our template function as
+   * simply `{ width, height, text }`, but if the template language is
+   * Handlebars, the last argument will always be an object containing template
+   * data. To avoid that along as a value for `height` or `text`, we do a type
+   * check on that argument first.
+   */
+  const options = {
+    width,
+    height: typeof height === 'number' ? height : undefined,
+    text: typeof text === 'string' ? text : undefined
+  };
+
+  return encode(template(options));
 };
