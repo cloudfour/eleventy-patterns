@@ -15,7 +15,7 @@ function template({
   </svg>`;
 }
 
-function encode(rendered) {
+function svgSourceToDataUri(rendered) {
   // Thanks to: filamentgroup/directory-encoder
   const cleaned = rendered
     .replace(/[\n\r]/gim, '') // Strip newlines
@@ -51,5 +51,5 @@ module.exports = (width, height, text) => {
     text: typeof text === 'string' ? text : undefined
   };
 
-  return encode(template(options));
+  return svgSourceToDataUri(template(options));
 };
