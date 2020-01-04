@@ -52,6 +52,7 @@
   "homepage": "https://github.com/cloudfour/eleventy-patterns#readme",
   "dependencies": {
     "@cloudfour/eslint-config": "^1.0.0",
+    "@cloudfour/simple-svg-placeholder": "^1.0.1",
     "@rollup/plugin-node-resolve": "^6.0.0",
     "babel-plugin-import-glob": "^2.0.0",
     "chance": "^1.1.4",
