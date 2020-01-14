@@ -28,15 +28,15 @@ scripts:
           </svg>
         </div>
         <ul class="EP_u_stagger-items EP_nav__submenu">
-          <li class="EP_nav__link">
-            <a href="/prototypes">
+          <li>
+            <a href="/prototypes" class="EP_nav__link">
               Prototypes Overview
             </a>
           </li>
           {{#each (sortCollection collections.prototypes)}}
             {{#unless data.hide}}
-              <li class="EP_nav__link">
-                <a href="{{url url}}">
+              <li>
+                <a href="{{url url}}" class="EP_nav__link">
                   {{data.title}}
                 </a>
               </li>
@@ -54,15 +54,15 @@ scripts:
           </svg>
         </div>
         <ul class="EP_u_stagger-items EP_nav__submenu">
-          <li class="EP_nav__link">
-            <a href="/patterns">
+          <li>
+            <a href="/patterns" class="EP_nav__link">
               Patterns Overview
             </a>
           </li>
           {{#each (sortCollection collections.patterns)}}
             {{#unless data.hide}}
-              <li class="EP_nav__link">
-                <a href="{{url url}}">
+              <li>
+                <a href="{{url url}}" class="EP_nav__link">
                   {{data.title}}
                 </a>
               </li>
@@ -72,16 +72,16 @@ scripts:
       </li>
     </ul>
     <ul class="EP_nav__menu-large">
-      <li class="EP_nav__link">
+      <li>
         <h3>
-          <a href="/prototypes">
+          <a href="/prototypes" class="EP_nav__link">
             Prototypes
           </a>
         </h3>
       </li>
-      <li class="EP_nav__link">
+      <li>
         <h3>
-          <a href="/patterns">
+          <a href="/patterns" class="EP_nav__link">
             Patterns
           </a>
         </h3>
