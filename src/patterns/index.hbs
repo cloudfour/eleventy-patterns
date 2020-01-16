@@ -8,7 +8,7 @@ layout: layouts/pattern-library
     {{#each (sortCollection collections.patterns)}}
       {{#unless data.hide}}
         <li class="EP_sidebar__menu-item">
-          <a href="{{url url}}">
+          <a href="{{url url}}" class="EP_nav__link">
             {{data.title}}
           </a>
         </li>

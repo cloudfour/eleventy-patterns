@@ -13,5 +13,16 @@
 
 body,
 html {
+  color: var(--EP_color-text);
   height: 100%;
+}
+
+a {
+  color: var(--EP_color-blue);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
 }

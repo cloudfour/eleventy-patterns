@@ -1,13 +1,7 @@
-:root {
-  --EP_nav-height: 5rem;
-  --EP_sidebar-width: 17em;
-  --EP_nav-spacing: 1.5rem;
-}
-
 .EP_layout {
   background: #fff;
   font-family: var(--EP_font-system);
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 .EP_layout__home {
@@ -15,7 +9,7 @@
 }
 
 .EP_layout__content {
-  border-top: 1px solid var(--EP_color-med-grey);
+  // border-top: 1px solid var(--EP_color-med-grey);
   position: relative;
 }
 
@@ -32,8 +26,8 @@
     bottom: 0;
     display: block;
     overflow-y: auto;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: var(--EP_nav-height);
     width: var(--EP_sidebar-width);
   }
 }
@@ -49,6 +43,6 @@
 .EP_layout__category {
 
   @media(min-width: 800px) {
-    margin-left: var(--EP_sidebar-width);
+    margin-left: calc(var(--EP_sidebar-width) + var(--EP_nav-spacing));
   }
 }
