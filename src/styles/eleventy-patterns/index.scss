@@ -20,9 +20,9 @@ html {
 a {
   color: var(--EP_color-blue);
   text-decoration: none;
-}
 
-a:hover,
-a:active {
-  text-decoration: underline;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }

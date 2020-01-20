@@ -1,0 +1,17 @@
+/**
+ * Shared custom properties for a default box shadow
+ */
+
+:root {
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --shadow-blur: 5px;
+  --shadow-offset: 2px;
+
+  /* prettier-ignore */
+  --shadow-default:
+    var(--shadow-offset)
+    var(--shadow-offset)
+    var(--shadow-blur)
+    var(--shadow-color);
+
+}

@@ -16,7 +16,7 @@
 
 .EP_card:hover,
 .EP_card:focus {
-  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-default);
   transform: translateY(-2px);
 }
 
