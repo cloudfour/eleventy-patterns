@@ -3,8 +3,8 @@
  */
 
 .EP_card {
-  border: 1px solid var(--EP_color-med-grey);
-  border-radius: 0.5rem;
+  border: var(--border-size-thin) solid var(--EP_color-med-grey);
+  border-radius: var(--border-radius-small);
   overflow: hidden;
   position: relative;
   transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;

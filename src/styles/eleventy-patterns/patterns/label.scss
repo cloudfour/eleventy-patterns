@@ -1,10 +1,6 @@
-:root {
-  --EP_label-border-width: 0.3em;
-}
-
 .EP_label {
   background: var(--EP_color-light-grey);
-  border-radius: 0.5em;
+  border-radius: var(--border-radius-small);
   display: inline-block;
   margin-bottom: 0.25em;
   margin-right: 0.5em;
