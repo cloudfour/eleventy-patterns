@@ -40,7 +40,7 @@
 
 .toggle-icon {
   color: var(--EP-color-text);
-  transition: transform 0.5s ease;
+  transition: transform var(--transition-prompt);
 }
 
 .toggle-icon.is-open {

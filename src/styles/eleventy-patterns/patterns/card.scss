@@ -7,7 +7,7 @@
   border-radius: var(--border-radius-small);
   overflow: hidden;
   position: relative;
-  transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+  transition: box-shadow var(--transition-prompt), transform var(--transition-prompt);
 
   @media (min-width: 800px) {
     display: flex;
@@ -26,7 +26,7 @@
 
 .EP_card__graphic {
   flex-shrink: 0;
-  transition: transform 0.3s ease-out;
+  transition: transform var(--transition-prompt);
 }
 
 .EP_card__primary-action {
