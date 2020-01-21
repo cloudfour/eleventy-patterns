@@ -13,21 +13,19 @@ scripts:
           Eleventy Patterns
         </a>
       </h2>
-      <button class="EP_nav__menu-toggle EP_button">Menu</button>
+      <button class="EP_nav__menu-toggle EP_button" aria-expanded="false">Menu</button>
 
     </div>
 
 
     <ul class="EP_nav__menu">
       <li class="EP_nav__category">
-        <div class="EP_nav__submenu-toggle">
-          <h3>
+        <a class="EP_nav__submenu-toggle" aria-expanded="false" role="button">
             Prototypes
-          </h3>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 12.35" class="toggle-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 12.35" class="toggle-icon" aria-hidden="true" focusable="false">
             <path d="M17.65,0,10,7.63,2.35,0,0,2.35l10,10,10-10Z"/>
           </svg>
-        </div>
+        </a>
         <ul class="EP_u_stagger-items EP_nav__submenu">
           <li>
             <a href="/prototypes" class="EP_nav__link">
@@ -46,14 +44,13 @@ scripts:
         </ul>
       </li>
       <li class="EP_nav__category">
-        <div class="EP_nav__submenu-toggle">
-          <h3>
-            Patterns
-          </h3>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 12.35" class="toggle-icon">
+        <a class="EP_nav__submenu-toggle" aria-expanded="false" role="button">
+          Patterns
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 12.35" class="toggle-icon" aria-hidden="true" focusable="false">
             <path d="M17.65,0,10,7.63,2.35,0,0,2.35l10,10,10-10Z"/>
           </svg>
-        </div>
+        </a>
+
         <ul class="EP_u_stagger-items EP_nav__submenu">
           <li>
             <a href="/patterns" class="EP_nav__link">
@@ -74,18 +71,14 @@ scripts:
     </ul>
     <ul class="EP_nav__menu-large">
       <li>
-        <h3>
-          <a href="/prototypes" class="EP_nav__link-primary">
-            Prototypes
-          </a>
-        </h3>
+        <a href="/prototypes" class="EP_nav__link-primary">
+          Prototypes
+        </a>
       </li>
       <li>
-        <h3>
-          <a href="/patterns" class="EP_nav__link-primary">
-            Patterns
-          </a>
-        </h3>
+        <a href="/patterns" class="EP_nav__link-primary">
+          Patterns
+        </a>
       </li>
     </ul>
   </nav>
