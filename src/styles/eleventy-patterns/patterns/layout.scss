@@ -4,7 +4,7 @@
 }
 
 .EP_layout__home {
-  padding: var(--EP_nav-spacing);
+  padding: 1.5em;
 }
 
 .EP_layout__content {
@@ -13,7 +13,7 @@
 
 .EP_layout__category,
 .EP_layout__sidebar {
-  padding: var(--EP_nav-spacing);
+  padding: 1.5em;
 }
 
 .EP_layout__sidebar {
@@ -35,12 +35,12 @@
 }
 
 .EP_sidebar__menu-item > * + * {
-  margin-top: var(--EP_nav-spacing);
+  margin-top: 1.5em;
 }
 
 .EP_layout__category {
 
   @media(min-width: 800px) {
-    margin-left: calc(var(--EP_sidebar-width) + var(--EP_nav-spacing));
+    margin-left: calc(var(--EP_sidebar-width) + 1.5em);
   }
 }

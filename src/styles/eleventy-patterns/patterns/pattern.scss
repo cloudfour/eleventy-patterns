@@ -16,14 +16,6 @@
   list-style: none;
 }
 
-.EP_pattern__jump-link {
-  display: inline-block;
-
-  &:not(:first-child) {
-    margin-left: var(--EP_nav-spacing);
-  }
-}
-
 .EP_pattern__example {
   background: #fff;
   padding: 1em;

@@ -5,11 +5,12 @@
 
 :root {
   --EP_preview-width: 400px;
-  --EP_preview-height: 500px;
+  --EP_preview-height: 600px;
 }
 
 .EP_preview {
   display: block;
+  height: calc(var(--EP_preview-height) / 3);
   overflow: hidden;
 
   @media (min-width: 800px) {
@@ -20,12 +21,12 @@
 
 .EP_preview__iframe {
   border: none;
+  height: var(--EP_preview-height);
   pointer-events: none;
   transform-origin: top left;
   width: 100%;
 
   @media (min-width: 800px) {
-    height: var(--EP_preview-height);
     transform: scale(0.5);
     width: var(--EP_preview-width);
   }
