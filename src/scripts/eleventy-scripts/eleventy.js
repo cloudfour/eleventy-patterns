@@ -1,3 +1,4 @@
+// Toggle menu on small screens
 function initMenuToggle() {
   const menuToggle = document.querySelector('.EP_nav__menu-toggle');
   const menu = document.querySelector('.EP_nav__menu');
@@ -9,6 +10,7 @@ function initMenuToggle() {
   });
 }
 
+// Toggle accordions
 function initSubmenuToggle() {
   const submenuToggle = document.querySelectorAll('.EP_nav__submenu-toggle');
 
@@ -29,3 +31,22 @@ window.addEventListener('load', () => {
   initMenuToggle();
   initSubmenuToggle();
 });
+
+var position = document.documentElement.scrollTop;
+
+// Testing
+function navPosition() {
+  var scroll = document.documentElement.scrollTop;
+  const menu = document.querySelector('.EP_nav__menu');
+
+  if (!menu.classList.contains('is-open')) {
+    if (scroll > position) {
+      document.body.classList.add('EP-nav-hidden');
+    } else {
+      document.body.classList.remove('EP-nav-hidden');
+    }
+    position = scroll;
+  }
+}
+
+window.addEventListener('scroll', navPosition);

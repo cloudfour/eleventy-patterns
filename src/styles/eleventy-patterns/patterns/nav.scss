@@ -3,17 +3,24 @@
   box-shadow:
     0 0 1px rgba(67, 90, 111, 0.47),
     0 2px 4px -2px rgba(67, 90, 111, 0.3);
-  position: sticky;
+  min-height: var(--EP_nav-height);
+  position: fixed;
   top: 0;
+  transition: top var(--transition-quick);
+  width: 100%;
   z-index: 1;
 
   @media (min-width: 800px) {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    min-height: var(--EP_nav-height);
     padding: 1.5em;
   }
+}
+
+.EP-nav-hidden .EP_nav {
+  box-shadow: 0 0 0 rgba(67, 90, 111, 0);
+  top: calc(var(--EP_nav-height) * -1);
 }
 
 .EP_nav__header {

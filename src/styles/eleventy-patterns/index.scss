@@ -17,6 +17,10 @@ html {
   height: 100%;
 }
 
+body:not(.EP-nav-hidden) {
+  padding-top: var(--EP_nav-height); /* 1 */
+}
+
 a {
   color: var(--EP_color-blue);
   text-decoration: none;
