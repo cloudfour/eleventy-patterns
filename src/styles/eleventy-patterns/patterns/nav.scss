@@ -11,10 +11,16 @@
   @media (min-width: 800px) {
     background: var(--EP_color-light-grey);
     box-shadow: none;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
     position: fixed;
-    top: 0;
+    scrollbar-width: none;
     width: var(--EP_sidebar-width);
   }
+}
+
+.EP_nav::-webkit-scrollbar {
+  display: none;
 }
 
 .EP_nav__header {
