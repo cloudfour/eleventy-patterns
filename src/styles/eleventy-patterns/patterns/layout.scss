@@ -24,7 +24,7 @@
     bottom: 0;
     display: block;
     overflow-y: auto;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: var(--EP_sidebar-width);
   }
@@ -32,6 +32,11 @@
 
 .EP_sidebar__menu {
   list-style: none;
+  margin-top: var(--EP_nav-height);
+}
+
+.EP-nav-hidden .EP_sidebar__menu {
+  margin-top: 0;
 }
 
 .EP_sidebar__menu-item > * + * {
@@ -39,6 +44,8 @@
 }
 
 .EP_layout__category {
+  overflow: hidden;
+
   @media(min-width: 800px) {
     margin-left: calc(var(--EP_sidebar-width) + 1.5em);
   }
