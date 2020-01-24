@@ -15,8 +15,8 @@ function initSubmenuToggle() {
   const submenuToggle = document.querySelectorAll('.EP_nav__submenu-toggle');
 
   submenuToggle.forEach(toggle => {
-    toggle.addEventListener('click', e => {
-      e.preventDefault();
+    toggle.addEventListener('click', event => {
+      event.preventDefault();
       let target = toggle.nextElementSibling;
       let expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
       const toggleIcon = toggle.querySelector('.toggle-icon');
