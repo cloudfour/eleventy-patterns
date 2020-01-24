@@ -34,7 +34,7 @@ window.addEventListener('load', () => {
 
 var position = document.documentElement.scrollTop;
 
-// Testing
+// Hide navigation when scrolling down, show when scrolling up
 function navPosition() {
   var scroll = document.documentElement.scrollTop;
   const menu = document.querySelector('.EP_nav__menu');
