@@ -3,22 +3,21 @@
   font-family: var(--EP_font-system);
 }
 
-.EP_layout__home {
-  padding: 1.5em;
-}
-
 .EP_layout__content {
-  position: relative;
-}
-
-.EP_layout__category,
-.EP_layout__sidebar {
+  overflow: hidden;
   padding: 1.5em;
+  position: relative;
+
+  @media(min-width: 800px) {
+    margin-left: var(--EP_sidebar-width);
+    padding: 1.5em 3em;
+  }
 }
 
 .EP_layout__sidebar {
   background: var(--EP_color-light-grey);
   display: none;
+  padding: 1.5em;
 
   @media(min-width: 800px) {
     bottom: 0;
@@ -36,10 +35,4 @@
 
 .EP_sidebar__menu-item > * + * {
   margin-top: 1.5em;
-}
-
-.EP_layout__category {
-  @media(min-width: 800px) {
-    margin-left: calc(var(--EP_sidebar-width) + 1.5em);
-  }
 }
