@@ -1,6 +1,9 @@
 const gulp = require('gulp');
 const generators = require('../../generators').default;
 const inquirer = require('inquirer');
+// Pull in any params passed to this CLI command
+// @see https://github.com/substack/minimist#example
+const argv = require('minimist')(process.argv.slice(2));
 
 const questions = [
   {
@@ -17,8 +20,16 @@ const questions = [
   }
 ];
 
+const callGenerator = (type, callback) => {
+  return generators[type].default(callback);
+};
+
 gulp.task('new', callback => {
+  if (typeof generators[argv.type] !== 'undefined') {
+    return callGenerator(argv.type, callback);
+  }
+
   inquirer.prompt(questions).then(({ type }) => {
-    return generators[type].default(callback);
+    return callGenerator(type, callback);
   });
 });
