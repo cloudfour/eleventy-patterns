@@ -3,6 +3,7 @@ const requireDir = require('require-dir');
 
 require('browser-sync').create(require('../package.json').name);
 
+requireDir('./cli');
 requireDir('./tasks');
 
 gulp.task('watch', () => {
