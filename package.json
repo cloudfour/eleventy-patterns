@@ -40,7 +40,8 @@
     "start": "npx gulp",
     "lint": "npx eslint \"**/*.js\" && npx stylelint \"**/*.scss\"",
     "lint-fix": "npx eslint \"**/*.js\" --fix && npx stylelint \"**/*.scss\" --fix",
-    "new": "npx gulp new --type"
+    "new": "npx gulp new --type",
+    "removeExamples": "npx gulp removeExamples"
   },
   "repository": {
     "type": "git",
