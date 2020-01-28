@@ -7,11 +7,6 @@
   padding: 1.5em;
 }
 
-// .EP_layout__category,
-// .EP_layout__sidebar {
-//   padding: 1.5em;
-// }
-
 .EP_layout__sidebar {
   background: var(--EP_color-light-grey);
   display: none;
@@ -42,6 +37,7 @@
 
 .EP_layout__category {
   overflow: hidden;
+  padding: 1.5em;
 
   @media(min-width: 800px) {
     margin-left: var(--EP_sidebar-width);
