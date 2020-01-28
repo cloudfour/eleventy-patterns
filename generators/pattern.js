@@ -55,7 +55,7 @@ const questions = [
   }
 ];
 
-exports.default = callback => {
+exports.default = async callback => {
   return inquirer
     .prompt(questions)
     .then(({ title, slug, notes, docTitle, docSlug, docNotes, includeJS }) => {
