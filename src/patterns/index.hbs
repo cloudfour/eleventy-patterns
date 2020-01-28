@@ -1,21 +1,7 @@
 ---
 title: Pattern Library
-layout: layouts/pattern-library
+layout: layouts/pattern-sidebar
 ---
-
-<div class="EP_layout__sidebar">
-  <ul class="EP_u_stagger-items EP_sidebar__menu">
-    {{#each (sortCollection collections.patterns)}}
-      {{#unless data.hide}}
-        <li class="EP_sidebar__menu-item">
-          <a href="{{url url}}" class="EP_nav__link">
-            {{data.title}}
-          </a>
-        </li>
-      {{/unless}}
-    {{/each}}
-  </ul>
-</div>
 
 <div class="EP_layout__category EP_u_stagger-items">
   {{!-- You can replace the line below with your page content --}}

@@ -1,0 +1,20 @@
+---
+title: Prototypes
+layout: layouts/pattern-library
+---
+
+<div class="EP_layout__sidebar">
+  <ul class="EP_sidebar__menu">
+    {{#each (sortCollection collections.patterns)}}
+      {{#unless data.hide}}
+        <li class="EP_sidebar__menu-item">
+          <a href="{{url url}}" class="EP_nav__link">
+            {{data.title}}
+          </a>
+        </li>
+      {{/unless}}
+    {{/each}}
+  </ul>
+</div>
+
+{{{ content }}}

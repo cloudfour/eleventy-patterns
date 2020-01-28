@@ -1,0 +1,41 @@
+.pattern-example {
+  animation: pulse 2s ease-in-out infinite;
+  background-color: #27738c;
+  border: none;
+  border-radius: 0.5em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 0.5em 1em;
+  transition-duration: 0.3s;
+  transition-property: transform, box-shadow, background-color;
+  transition-timing-function: ease-out;
+}
+
+.pattern-example:hover,
+.pattern-example:focus {
+  background-color: #587baa;
+}
+
+.pattern-example:active {
+  animation: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+  transform: scale(0.95);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    transform: scale(0.975);
+  }
+
+  50% {
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.25);
+    transform: scale(1.025);
+  }
+
+  100% {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    transform: scale(0.975);
+  }
+}

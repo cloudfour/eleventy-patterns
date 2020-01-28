@@ -7,6 +7,7 @@ function initMenuToggle() {
     let expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
     menu.classList.toggle('is-open');
     menuToggle.setAttribute('aria-expanded', !expanded);
+    document.body.classList.toggle('no-scroll');
   });
 }
 
@@ -34,7 +35,7 @@ window.addEventListener('load', () => {
 
 var position = document.documentElement.scrollTop;
 
-// Hide navigation when scrolling down, show when scrolling up
+// WIP: hide navigation when scrolling down, show when scrolling up
 function navPosition() {
   var scroll = document.documentElement.scrollTop;
   const menu = document.querySelector('.EP_nav__menu');
