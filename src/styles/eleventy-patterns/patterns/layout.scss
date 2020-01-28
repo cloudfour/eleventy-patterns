@@ -7,10 +7,10 @@
   padding: 1.5em;
 }
 
-.EP_layout__category,
-.EP_layout__sidebar {
-  padding: 1.5em;
-}
+// .EP_layout__category,
+// .EP_layout__sidebar {
+//   padding: 1.5em;
+// }
 
 .EP_layout__sidebar {
   background: var(--EP_color-light-grey);
@@ -20,6 +20,7 @@
     bottom: 0;
     display: block;
     overflow-y: auto;
+    padding: 0.5em 0;
     position: fixed;
     top: 0;
     width: var(--EP_sidebar-width);
