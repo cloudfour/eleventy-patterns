@@ -33,21 +33,18 @@ window.addEventListener('load', () => {
   initSubmenuToggle();
 });
 
-var position = document.documentElement.scrollTop;
+let position = document.documentElement.scrollTop;
 
 // WIP: hide navigation when scrolling down, show when scrolling up
 function navPosition() {
-  var scroll = document.documentElement.scrollTop;
-  const menu = document.querySelector('.EP_nav__menu');
+  let scroll = document.documentElement.scrollTop;
 
-  if (!menu.classList.contains('is-open')) {
-    if (scroll > position) {
-      document.body.classList.add('EP-nav-hidden');
-    } else {
-      document.body.classList.remove('EP-nav-hidden');
-    }
-    position = scroll;
+  if (scroll > position) {
+    document.body.classList.add('EP-nav-hidden');
+  } else {
+    document.body.classList.remove('EP-nav-hidden');
   }
+  position = scroll;
 }
 
 window.addEventListener('scroll', navPosition);
