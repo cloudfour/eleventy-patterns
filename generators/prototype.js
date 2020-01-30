@@ -1,4 +1,3 @@
-const gulp = require('gulp');
 const fs = require('fs');
 const inquirer = require('inquirer');
 const slug = require('slug');
@@ -33,7 +32,7 @@ const questions = [
   }
 ];
 
-gulp.task('prototype', callback => {
+exports.default = async callback => {
   return inquirer.prompt(questions).then(({ title, slug, notes }) => {
     const prototypesRoot = 'src/prototypes/';
     const prototypesPath = `${prototypesRoot}/${slug}`;
@@ -67,4 +66,4 @@ notes:
       fs.writeFile(`${prototypesPath}/functions.js`, '', callback);
     }
   });
-});
+};

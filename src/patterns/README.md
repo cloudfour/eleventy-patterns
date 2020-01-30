@@ -27,7 +27,7 @@ By including all of these pieces, you get the following:
 - The pattern styles are imported into your primary stylesheet.
 - Documentation for your new pattern.
 
-Creating patterns can be streamlined by running `npx gulp pattern` in your terminal. This will ask you a few questions, and then scaffold out the files required for your new pattern.
+Creating patterns can be streamlined by running `npm run new pattern` in your terminal. This will ask you a few questions, and then scaffold out the files required for your new pattern.
 
 ## Pattern Frontmatter
 
