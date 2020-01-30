@@ -5,7 +5,7 @@ labels:
 - approved
 - patternready
 - archived
-notes: 
+notes:
   This is an example prototype showing every potential label.
 ---
 
@@ -24,9 +24,29 @@ notes:
 </p>
 
 <p>
-  Here you can see we're using 
-  <a href="/patterns/pattern-example/">a pattern</a> 
+  Here you can see we're using
+  <a href="/patterns/pattern-example/">a pattern</a>
   in our prototype, with its associated styles and JavaScript interactions:
 </p>
 
 {{>pattern-example}}
+
+<p>
+  Here's an example of some dummy content…
+</p>
+
+<p>
+  A paragraph: {{chance 'paragraph' '{ "sentences": 2 }'}}
+</p>
+
+<p>
+  A name: {{chance 'name'}}
+</p>
+
+<p>
+  A color: {{chance 'color' '{ "format": "hex" }'}}
+</p>
+
+<p>
+  An image: <img src="{{dummyImage 200 100}}" alt="">
+</p>

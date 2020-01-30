@@ -34,7 +34,7 @@ window.addEventListener('load', () => {
   initMenuToggle();
   initSubmenuToggle();
   headsUp({
-    selector: '.EP_nav',
+    selector: '.EP_header-container',
     debounce: 100,
     hiddenHeaderClass: 'EP-nav-hidden'
   });

@@ -1,4 +1,4 @@
-.EP_nav {
+.EP_header-container {
   background: var(--EP_color-white);
   box-shadow:
     0 0 1px rgba(67, 90, 111, 0.47),
@@ -18,12 +18,12 @@
   }
 }
 
-.EP-nav-hidden .EP_nav {
+.EP-nav-hidden .EP_header-container {
   box-shadow: 0 0 0 rgba(67, 90, 111, 0);
   transform: translateY(calc(var(--EP_nav-height) * -1));
 }
 
-.EP_nav__header {
+.EP_header {
   align-items: center;
   display: flex;
   height: var(--EP_nav-height);
