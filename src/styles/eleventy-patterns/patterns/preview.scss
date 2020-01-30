@@ -4,13 +4,13 @@
  */
 
 :root {
-  --EP_preview-width: 400px;
-  --EP_preview-height: 600px;
+  --EP_preview-width: 320px;
+  --EP_preview-height: 568px;
 }
 
 .EP_preview {
   display: block;
-  height: calc(var(--EP_preview-height) / 3);
+  height: calc(var(--EP_preview-height) / 4);
   overflow: hidden;
 
   @media (min-width: 800px) {
@@ -21,13 +21,14 @@
 
 .EP_preview__iframe {
   border: none;
-  height: var(--EP_preview-height);
+  object-fit: fill;
   pointer-events: none;
-  transform-origin: top left;
   width: 100%;
 
   @media (min-width: 800px) {
+    height: var(--EP_preview-height);
     transform: scale(0.5);
+    transform-origin: top left;
     width: var(--EP_preview-width);
   }
 }
