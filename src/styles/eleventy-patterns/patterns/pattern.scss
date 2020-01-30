@@ -21,6 +21,11 @@
   padding: 1em;
 }
 
+.EP_pattern__iframe {
+  border: none;
+  width: 100%;
+}
+
 .EP_pattern__code {
   font-family: var(--EP_font-monospace);
   padding-top: 0.5em;

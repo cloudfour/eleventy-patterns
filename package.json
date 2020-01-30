@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "devDependencies": {
-    "@11ty/eleventy": "^0.9.0",
+    "@11ty/eleventy": "^0.10.0",
     "@cloudfour/eslint-plugin": "^3.0.0",
     "acorn": "^7.1.0",
     "browser-sync": "^2.26.7",
@@ -24,15 +24,14 @@
     "gulp-sourcemaps": "^2.6.5",
     "install": "^0.13.0",
     "markdown-it": "^8.4.2",
+    "minimist": "^1.2.0",
     "node-sass": "^4.12.0",
-    "npm": "^6.11.3",
     "path": "^0.12.7",
     "prettier": "^1.19.1",
     "prismjs": "^1.17.1",
     "require-dir": "^1.2.0",
     "rollup": "^1.26.3",
     "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-glob-import": "^0.4.4",
     "slug": "^1.1.0",
     "stylelint": "^9.10.1",
     "stylelint-config-cloudfour-suit": "^2.0.0"
@@ -40,7 +39,9 @@
   "scripts": {
     "start": "npx gulp",
     "lint": "npx eslint \"**/*.js\" && npx stylelint \"**/*.scss\"",
-    "lint-fix": "npx eslint \"**/*.js\" --fix && npx stylelint \"**/*.scss\" --fix"
+    "lint-fix": "npx eslint \"**/*.js\" --fix && npx stylelint \"**/*.scss\" --fix",
+    "new": "npx gulp new --type",
+    "removeExamples": "npx gulp removeExamples"
   },
   "repository": {
     "type": "git",
@@ -54,6 +55,11 @@
   "homepage": "https://github.com/cloudfour/eleventy-patterns#readme",
   "dependencies": {
     "@cloudfour/eslint-config": "^1.0.0",
-    "headsup.js": "github:cloudfour/headsup.js#5e2059a"
+    "@cloudfour/simple-svg-placeholder": "^1.0.1",
+    "@rollup/plugin-node-resolve": "^6.0.0",
+    "babel-plugin-import-glob": "^2.0.0",
+    "chance": "^1.1.4",
+    "iframe-resizer": "^4.2.8",
+    "rollup-plugin-commonjs": "^10.1.0"
   }
 }

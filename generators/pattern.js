@@ -1,4 +1,3 @@
-const gulp = require('gulp');
 const fs = require('fs');
 const inquirer = require('inquirer');
 const slug = require('slug');
@@ -56,7 +55,7 @@ const questions = [
   }
 ];
 
-gulp.task('pattern', callback => {
+exports.default = async callback => {
   return inquirer
     .prompt(questions)
     .then(({ title, slug, notes, docTitle, docSlug, docNotes, includeJS }) => {
@@ -76,12 +75,18 @@ ${notes}
 ---
 title: ${docTitle}
 layout: layouts/pattern-example
-notes: 
+notes:
   ${docNotes}
 ---
 
 {{>${slug}}}
 `.trim();
+
+      const examplesJson = `
+{
+"layout": "layouts/pattern-example--iframed.hbs"
+}
+`;
 
       if (fs.existsSync(patternsPath)) {
         console.error('Error: A pattern with that slug already exists.');
@@ -108,6 +113,12 @@ notes:
           documentContent,
           callback
         );
+
+        fs.writeFile(
+          `${patternsPath}/examples/examples.json`,
+          examplesJson,
+          callback
+        );
       }
     });
-});
+};

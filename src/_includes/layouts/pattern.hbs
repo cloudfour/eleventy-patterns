@@ -9,7 +9,7 @@ layout: layouts/pattern-sidebar
 
   {{#each (sortCollection collections.patternExamples)}}
     {{#if (isExamplePath this.inputPath ../page.inputPath)}}
-      {{> layouts/pattern-example this}}
+      {{~> layouts/pattern-example this~}}
     {{/if}}
   {{/each}}
 </div>

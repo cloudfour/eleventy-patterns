@@ -1,7 +1,8 @@
 var gulp = require('gulp');
 var rollup = require('gulp-better-rollup');
 var babel = require('rollup-plugin-babel');
-const globImport = require('rollup-plugin-glob-import');
+const nodeResolve = require('@rollup/plugin-node-resolve');
+const commonjs = require('rollup-plugin-commonjs');
 
 /**
  * A gulp task to process our javascript.
@@ -14,7 +15,7 @@ gulp.task('js', () => {
     .pipe(
       rollup(
         {
-          plugins: [babel(), globImport()]
+          plugins: [babel(), nodeResolve(), commonjs()]
         },
         {
           format: 'iife'
