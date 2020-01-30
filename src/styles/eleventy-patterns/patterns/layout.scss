@@ -24,11 +24,12 @@
 
 .EP_sidebar__menu {
   list-style: none;
-  margin-top: var(--EP_nav-height);
+  transform: translateY(var(--EP_nav-height));
+  transition: transform var(--transition-quick);
 }
 
 .EP-nav-hidden .EP_sidebar__menu {
-  margin-top: 0;
+  transform: translateY(0);
 }
 
 .EP_sidebar__menu-item > * + * {

@@ -1,4 +1,4 @@
-import headsUp from 'headsup.js'
+import headsUp from 'headsup.js';
 
 // Toggle menu on small screens
 function initMenuToggle() {
@@ -36,6 +36,6 @@ window.addEventListener('load', () => {
   headsUp({
     selector: '.EP_nav',
     debounce: 100,
-    // hiddenHeaderClass = 'EP-nav-hidden'
+    hiddenHeaderClass: 'EP-nav-hidden'
   });
 });

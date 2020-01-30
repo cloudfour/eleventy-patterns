@@ -59,6 +59,7 @@
     "@rollup/plugin-node-resolve": "^6.0.0",
     "babel-plugin-import-glob": "^2.0.0",
     "chance": "^1.1.4",
+    "headsup.js": "github:cloudfour/headsup.js#5e2059a",
     "iframe-resizer": "^4.2.8",
     "rollup-plugin-commonjs": "^10.1.0"
   }
