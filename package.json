@@ -53,6 +53,7 @@
   },
   "homepage": "https://github.com/cloudfour/eleventy-patterns#readme",
   "dependencies": {
-    "@cloudfour/eslint-config": "^1.0.0"
+    "@cloudfour/eslint-config": "^1.0.0",
+    "headsup.js": "github:cloudfour/headsup.js#5e2059a"
   }
 }

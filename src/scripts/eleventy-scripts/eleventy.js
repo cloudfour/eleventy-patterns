@@ -1,3 +1,5 @@
+import headsUp from 'headsup.js'
+
 // Toggle menu on small screens
 function initMenuToggle() {
   const menuToggle = document.querySelector('.EP_nav__menu-toggle');
@@ -11,7 +13,7 @@ function initMenuToggle() {
   });
 }
 
-// Toggle accordions
+// Toggle menu accordions
 function initSubmenuToggle() {
   const submenuToggle = document.querySelectorAll('.EP_nav__submenu-toggle');
 
@@ -31,20 +33,9 @@ function initSubmenuToggle() {
 window.addEventListener('load', () => {
   initMenuToggle();
   initSubmenuToggle();
+  headsUp({
+    selector: '.EP_nav',
+    debounce: 100,
+    // hiddenHeaderClass = 'EP-nav-hidden'
+  });
 });
-
-let position = document.documentElement.scrollTop;
-
-// WIP: hide navigation when scrolling down, show when scrolling up
-function navPosition() {
-  let scroll = document.documentElement.scrollTop;
-
-  if (scroll > position) {
-    document.body.classList.add('EP-nav-hidden');
-  } else {
-    document.body.classList.remove('EP-nav-hidden');
-  }
-  position = scroll;
-}
-
-window.addEventListener('scroll', navPosition);
