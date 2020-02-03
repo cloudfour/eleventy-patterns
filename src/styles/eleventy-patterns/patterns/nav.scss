@@ -12,8 +12,8 @@
   @media (min-width: 800px) {
     align-items: center;
     display: flex;
+    height: var(--EP_nav-height);
     justify-content: space-between;
-    min-height: var(--EP_nav-height);
     padding: 0 1.5em;
   }
 }
@@ -31,7 +31,7 @@
   padding: 0 1.5em;
 
   @media (min-width: 800px) {
-    min-height: 0;
+    height: auto;
     padding: 0;
   }
 }
@@ -140,6 +140,6 @@
 
   @media (min-width: 800px) {
     display: flex;
-    margin: calc(1rem * -1);
+    margin: 0 calc(1rem * -1);
   }
 }
