@@ -3,8 +3,11 @@
   font-family: var(--EP_font-system);
 }
 
-.EP_layout__home {
-  padding: 1.5em;
+.EP_layout__container {
+
+  @media(min-width: 800px) {
+    display: flex;
+  }
 }
 
 .EP_layout__sidebar {
@@ -12,24 +15,15 @@
   display: none;
 
   @media(min-width: 800px) {
-    bottom: 0;
     display: block;
-    overflow-y: auto;
+    flex: 0 0 auto;
     padding: 0.5em 0;
-    position: fixed;
-    top: 0;
     width: var(--EP_sidebar-width);
   }
 }
 
 .EP_sidebar__menu {
   list-style: none;
-  transform: translateY(var(--EP_nav-height));
-  transition: transform var(--transition-quick);
-}
-
-.EP-nav-hidden .EP_sidebar__menu {
-  transform: translateY(0);
 }
 
 .EP_sidebar__menu-item > * + * {
@@ -39,9 +33,4 @@
 .EP_layout__content {
   overflow: hidden;
   padding: 1.5em;
-
-  @media(min-width: 800px) {
-    margin-left: var(--EP_sidebar-width);
-    padding: 1.5em 3em;
-  }
 }
