@@ -21,7 +21,7 @@ body.EP_no-scroll {
   overflow: hidden;
 }
 
-body:not(.EP-nav-hidden) {
+body:not(.EP_nav-hidden) {
   padding-top: var(--EP_nav-height); /* 1 */
 }
 

@@ -36,6 +36,6 @@ window.addEventListener('load', () => {
   headsUp({
     selector: '.EP_js-header-container',
     debounce: 100,
-    hiddenHeaderClass: 'EP-nav-hidden'
+    hiddenHeaderClass: 'EP_nav-hidden'
   });
 });
