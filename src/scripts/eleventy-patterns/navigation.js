@@ -9,7 +9,7 @@ function initMenuToggle() {
     let expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
     menu.classList.toggle('is-open');
     menuToggle.setAttribute('aria-expanded', !expanded);
-    document.body.classList.toggle('no-scroll');
+    document.body.classList.toggle('EP_no-scroll');
   });
 }
 
@@ -22,7 +22,7 @@ function initSubmenuToggle() {
       event.preventDefault();
       let target = toggle.nextElementSibling;
       let expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
-      const toggleIcon = toggle.querySelector('.toggle-icon');
+      const toggleIcon = toggle.querySelector('.EP_toggle-icon');
       target.classList.toggle('is-open');
       toggleIcon.classList.toggle('is-open');
       toggle.setAttribute('aria-expanded', !expanded);

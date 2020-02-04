@@ -3,11 +3,11 @@
  */
 
 .EP_card {
-  border: var(--border-size-thin) solid var(--EP_color-med-grey);
-  border-radius: var(--border-radius-small);
+  border: var(--EP_border-size) solid var(--EP_color-med-grey);
+  border-radius: var(--EP_border-radius);
   overflow: hidden;
   position: relative;
-  transition: transform var(--transition-prompt);
+  transition: transform var(--EP_transition-prompt);
 
   @media (min-width: 800px) {
     display: flex;
@@ -16,7 +16,7 @@
 
 .EP_card:hover,
 .EP_card:focus {
-  box-shadow: var(--shadow-default);
+  box-shadow: var(--EP_shadow-default);
   transform: translateY(-2px);
 }
 
@@ -26,7 +26,7 @@
 
 .EP_card__graphic {
   flex-shrink: 0;
-  transition: transform var(--transition-prompt);
+  transition: transform var(--EP_transition-prompt);
 }
 
 .EP_card__primary-action {

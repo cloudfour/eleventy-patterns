@@ -1,19 +1,9 @@
-/* prettier-ignore */
-
 :root {
   /**
    * Motion Duration Variables
-   *
-   * Expressed as single-decimal-point numbers so that they always evenly divide
-   * the targeted 60 frames-per-second required for smooth animation.
    */
-  --duration-instant: 0s;
-  --duration-immediate: 0.1s;
-  --duration-quick: 0.2s;
-  --duration-prompt: 0.3s;
-  --duration-slow: 0.4s;
-  --duration-glacial: 0.6s;
-  --duration-geological: 0.9s;
+  --EP_duration-quick: 0.2s;
+  --EP_duration-prompt: 0.3s;
 
   /**
    * Motion Easing Variables
@@ -24,24 +14,11 @@
    *  still allowing for a natural slowdown at the end."
    * - http://bit.ly/choosing-the-right-easing
    */
-  --ease-normal: ease-in-out;
-  --ease-normal-in: ease-in;
-  --ease-normal-out: ease-out;
+  --EP_ease-normal-out: ease-out;
 
   /**
    * Standard Transition Combinations
-   *
-   * There should be no custom numbers here, only combinations of approved
-   * durations and easings from above.
-   *
-   * Note you can create a delay by adding a second duration after the first.
    */
-  --transition-immediate: var(--ease-normal-out) var(--duration-immediate);
-  --transition-quick: var(--ease-normal-out) var(--duration-quick);
-  --transition-prompt: var(--ease-normal-out) var(--duration-prompt);
-  --transition-slow: var(--ease-normal-out) var(--duration-slow);
-  --transition-glacial: var(--ease-normal-out) var(--duration-glacial);
-  --transition-geological: var(--ease-normal-out) var(--duration-geological);
-  --transition-geological-delay: var(--transition-geological) var(--duration-prompt);
-  --transition-default: var(--transition-prompt);
+  --EP_transition-quick: var(--EP_ease-normal-out) var(--EP_duration-quick);
+  --EP_transition-prompt: var(--EP_ease-normal-out) var(--EP_duration-prompt);
 }

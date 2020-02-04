@@ -1,14 +1,4 @@
-/**
- * Border Variables
- *
- * 1. Arbitrarily large border-radius value to ensure a pill shape
- */
-
 :root {
-  --border-radius-small: 0.5em;
-  --border-radius-medium: 1em;
-  --border-radius-pill: 99em; /* 1 */
-  --border-size-thick: 4px;
-  --border-size-medium: 2px;
-  --border-size-thin: 1px;
+  --EP_border-radius: 0.5em;
+  --EP_border-size: 1px;
 }

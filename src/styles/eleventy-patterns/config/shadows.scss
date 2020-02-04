@@ -3,15 +3,12 @@
  */
 
 :root {
-  --shadow-color: rgba(0, 0, 0, 0.2);
-  --shadow-blur: 5px;
-  --shadow-offset: 2px;
-
-  /* prettier-ignore */
-  --shadow-default:
-    var(--shadow-offset)
-    var(--shadow-offset)
-    var(--shadow-blur)
-    var(--shadow-color);
-
+  --EP_shadow-color: rgba(0, 0, 0, 0.2);
+  --EP_shadow-blur: 5px;
+  --EP_shadow-offset: 2px;
+  --EP_shadow-default:
+    var(--EP_shadow-offset)
+    var(--EP_shadow-offset)
+    var(--EP_shadow-blur)
+    var(--EP_shadow-color);
 }
