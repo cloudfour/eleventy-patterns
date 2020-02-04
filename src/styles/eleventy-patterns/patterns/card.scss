@@ -9,7 +9,7 @@
   position: relative;
   transition: transform var(--EP_transition-prompt);
 
-  @media (min-width: 800px) {
+  @media (min-width: 50em) {
     display: flex;
   }
 }

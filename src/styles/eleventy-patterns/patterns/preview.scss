@@ -13,7 +13,7 @@
   height: calc(var(--EP_preview-height) / 4);
   overflow: hidden;
 
-  @media (min-width: 800px) {
+  @media (min-width: 50em) {
     height: calc(var(--EP_preview-height) / 2);
     width: calc(var(--EP_preview-width) / 2);
   }
@@ -25,7 +25,7 @@
   pointer-events: none;
   width: 100%;
 
-  @media (min-width: 800px) {
+  @media (min-width: 50em) {
     height: var(--EP_preview-height);
     transform: scale(0.5);
     transform-origin: top left;
