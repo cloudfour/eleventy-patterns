@@ -2,8 +2,8 @@ import headsUp from 'headsup.js';
 
 // Toggle menu on small screens
 function initMenuToggle() {
-  const menuToggle = document.querySelector('.EP_nav__menu-toggle');
-  const menu = document.querySelector('.EP_nav__menu');
+  const menuToggle = document.querySelector('.EP_js-nav__menu-toggle');
+  const menu = document.querySelector('.EP_js-nav__menu');
 
   menuToggle.addEventListener('click', () => {
     let expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
@@ -15,7 +15,7 @@ function initMenuToggle() {
 
 // Toggle menu accordions
 function initSubmenuToggle() {
-  const submenuToggle = document.querySelectorAll('.EP_nav__submenu-toggle');
+  const submenuToggle = document.querySelectorAll('.EP_js-nav__submenu-toggle');
 
   submenuToggle.forEach(toggle => {
     toggle.addEventListener('click', event => {
@@ -34,7 +34,7 @@ window.addEventListener('load', () => {
   initMenuToggle();
   initSubmenuToggle();
   headsUp({
-    selector: '.EP_header-container',
+    selector: '.EP_js-header-container',
     debounce: 100,
     hiddenHeaderClass: 'EP-nav-hidden'
   });

@@ -7,19 +7,19 @@ scripts:
 - /scripts/eleventy-patterns/navigation
 ---
 <div class="EP_layout">
-  <div class="EP_header-container">
+  <div class="EP_header-container EP_js-header-container">
     <header class="EP_header">
       <h2>
         <a href="/" class="EP_nav__logo">
           Eleventy Patterns
         </a>
       </h2>
-      <button class="EP_nav__menu-toggle EP_button" aria-expanded="false">Menu</button>
+      <button class="EP_nav__menu-toggle EP_js-nav__menu-toggle EP_button" aria-expanded="false">Menu</button>
     </header>
     <nav class="EP_nav">
-      <ul class="EP_nav__menu">
+      <ul class="EP_nav__menu EP_js-nav__menu">
         <li class="EP_nav__category">
-          <a class="EP_nav__submenu-toggle" aria-expanded="false" role="button">
+          <a class="EP_nav__submenu-toggle EP_js-nav__submenu-toggle" aria-expanded="false" role="button">
               Prototypes
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 12.35" class="EP_toggle-icon" aria-hidden="true" focusable="false">
               <path d="M17.65,0,10,7.63,2.35,0,0,2.35l10,10,10-10Z"/>
@@ -43,7 +43,7 @@ scripts:
           </ul>
         </li>
         <li class="EP_nav__category">
-          <a class="EP_nav__submenu-toggle" aria-expanded="false" role="button">
+          <a class="EP_nav__submenu-toggle EP_js-nav__submenu-toggle" aria-expanded="false" role="button">
             Patterns
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 12.35" class="EP_toggle-icon" aria-hidden="true" focusable="false">
               <path d="M17.65,0,10,7.63,2.35,0,0,2.35l10,10,10-10Z"/>
