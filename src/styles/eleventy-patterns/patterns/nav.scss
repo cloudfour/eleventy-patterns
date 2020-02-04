@@ -19,7 +19,7 @@
 }
 
 .EP-nav-hidden .EP_header-container {
-  box-shadow: 0 0 0 rgba(67, 90, 111, 0);
+  box-shadow: none;
   transform: translateY(calc(var(--EP_nav-height) * -1));
 }
 
