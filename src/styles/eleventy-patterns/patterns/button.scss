@@ -1,18 +1,21 @@
 .EP_button {
   background: var(--EP_color-light-grey);
   border: var(--EP_border-size) solid var(--EP_color-med-grey);
-  border: none;
   border-radius: var(--EP_border-radius);
   color: var(--EP_color-dark-grey);
   cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
   padding: 0.5rem 1rem;
-  transition: background var(--EP_transition-prompt), color var(--EP_transition-prompt);
+  transition:
+    background var(--EP_transition-prompt),
+    border-color var(--EP_transition-prompt),
+    color var(--EP_transition-prompt);
 
   &:hover,
   &:focus {
     background: var(--EP_color-dark-grey);
+    border-color: var(--EP_color-dark-grey);
     color: var(--EP_color-white);
   }
 }
