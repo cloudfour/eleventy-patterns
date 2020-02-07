@@ -1,11 +1,6 @@
----
-title: Prototypes
-layout: layouts/pattern-library
----
-
 <div class="EP_sidebar">
   <ul class="EP_sidebar__menu">
-    {{#each (sortCollection collections.patterns)}}
+    {{#each (sortCollection this)}}
       {{#unless data.hide}}
         <li class="EP_sidebar__menu-item">
           <a href="{{url url}}" class="EP_nav__link">
@@ -16,5 +11,3 @@ layout: layouts/pattern-library
     {{/each}}
   </ul>
 </div>
-
-{{{ content }}}
