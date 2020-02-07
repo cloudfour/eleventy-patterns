@@ -73,6 +73,8 @@
 
 .EP_nav__submenu-toggle {
   align-items: center;
+  background: var(--EP_color-white);
+  border: none;
   color: var(--EP_color-text);
   cursor: pointer;
   display: flex;
@@ -80,11 +82,7 @@
   font-weight: bold;
   justify-content: space-between;
   padding: 1.5rem;
-}
-
-.EP_nav__submenu-toggle:hover,
-.EP_nav__submenu-toggle:focus {
-  text-decoration: none;
+  width: 100%;
 }
 
 .EP_toggle-icon {
