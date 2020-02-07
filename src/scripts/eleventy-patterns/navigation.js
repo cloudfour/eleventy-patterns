@@ -1,4 +1,5 @@
 import headsUp from 'headsup.js';
+import scrollLock from 'scroll-lock';
 
 // Toggle menu on small screens
 function initMenuToggle() {
@@ -6,13 +7,18 @@ function initMenuToggle() {
   const menu = document.querySelector('.EP_js-nav__menu');
 
   menuToggle.addEventListener('click', () => {
-    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    const wasExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
 
     // Toggle `aria-expanded` to the opposite of its current value
-    menuToggle.setAttribute('aria-expanded', !expanded);
+    menuToggle.setAttribute('aria-expanded', !wasExpanded);
+
+    if (wasExpanded) {
+      scrollLock.enablePageScroll(menu);
+    } else {
+      scrollLock.disablePageScroll(menu);
+    }
 
     menu.classList.toggle('is-open');
-    document.body.classList.toggle('EP_no-scroll');
   });
 }
 
