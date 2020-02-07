@@ -90,7 +90,7 @@
   transition: transform var(--EP_transition-prompt);
 }
 
-.EP_toggle-icon.is-open {
+.EP_nav__category.is-open .EP_toggle-icon {
   transform: rotate(180deg);
 }
 
@@ -102,11 +102,12 @@
 .EP_nav__submenu {
   background: var(--EP_color-light-grey);
   border-top: var(--EP_border-size) solid var(--EP_color-med-grey);
+  display: none;
   padding: 0.5em 0;
 }
 
-.EP_nav__submenu:not(.is-open) {
-  display: none;
+.EP_nav__category.is-open .EP_nav__submenu {
+  display: block;
 }
 
 .EP_nav__link {

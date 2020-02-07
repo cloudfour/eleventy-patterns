@@ -18,20 +18,18 @@ function initMenuToggle() {
 
 // Toggle menu accordions
 function initSubmenuToggle() {
-  const submenuToggle = document.querySelectorAll('.EP_js-nav__submenu-toggle');
+  const categories = document.querySelectorAll('.EP_nav__category');
 
-  submenuToggle.forEach(toggle => {
+  categories.forEach(category => {
+    const toggle = category.querySelector('.EP_js-nav__submenu-toggle');
+
     toggle.addEventListener('click', event => {
-      const target = toggle.nextElementSibling;
-      const toggleIcon = toggle.querySelector('.EP_toggle-icon');
-
       const expanded = toggle.getAttribute('aria-expanded') === 'true';
 
       // Toggle `aria-expanded` to the opposite of its current value
       toggle.setAttribute('aria-expanded', !expanded);
 
-      target.classList.toggle('is-open');
-      toggleIcon.classList.toggle('is-open');
+      category.classList.toggle('is-open');
     });
   });
 }
