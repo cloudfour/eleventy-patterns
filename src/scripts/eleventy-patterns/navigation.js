@@ -6,7 +6,7 @@ function initMenuToggle() {
   const menu = document.querySelector('.EP_js-nav__menu');
 
   menuToggle.addEventListener('click', () => {
-    let expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+    let expanded = menuToggle.getAttribute('aria-expanded') === 'true';
     menu.classList.toggle('is-open');
     menuToggle.setAttribute('aria-expanded', !expanded);
     document.body.classList.toggle('EP_no-scroll');
@@ -20,7 +20,7 @@ function initSubmenuToggle() {
   submenuToggle.forEach(toggle => {
     toggle.addEventListener('click', event => {
       let target = toggle.nextElementSibling;
-      let expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
+      let expanded = toggle.getAttribute('aria-expanded') === 'true';
       const toggleIcon = toggle.querySelector('.EP_toggle-icon');
       target.classList.toggle('is-open');
       toggleIcon.classList.toggle('is-open');
