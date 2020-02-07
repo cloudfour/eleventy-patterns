@@ -16,12 +16,4 @@ html {
   height: 100%;
 }
 
-a {
-  color: var(--EP_color-blue);
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
-}
+.EP_zone a
