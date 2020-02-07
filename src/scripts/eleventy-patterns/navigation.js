@@ -6,10 +6,12 @@ function initMenuToggle() {
   const menu = document.querySelector('.EP_js-nav__menu');
 
   menuToggle.addEventListener('click', () => {
-    let expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-    menu.classList.toggle('is-open');
+    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+
     // Toggle `aria-expanded` to the opposite of its current value
     menuToggle.setAttribute('aria-expanded', !expanded);
+
+    menu.classList.toggle('is-open');
     document.body.classList.toggle('EP_no-scroll');
   });
 }
@@ -20,13 +22,16 @@ function initSubmenuToggle() {
 
   submenuToggle.forEach(toggle => {
     toggle.addEventListener('click', event => {
-      let target = toggle.nextElementSibling;
-      let expanded = toggle.getAttribute('aria-expanded') === 'true';
+      const target = toggle.nextElementSibling;
       const toggleIcon = toggle.querySelector('.EP_toggle-icon');
-      target.classList.toggle('is-open');
-      toggleIcon.classList.toggle('is-open');
+
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+
       // Toggle `aria-expanded` to the opposite of its current value
       toggle.setAttribute('aria-expanded', !expanded);
+
+      target.classList.toggle('is-open');
+      toggleIcon.classList.toggle('is-open');
     });
   });
 }
