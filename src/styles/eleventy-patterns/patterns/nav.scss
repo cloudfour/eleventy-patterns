@@ -1,4 +1,4 @@
-.EP_header-container {
+.EP_header {
   background: var(--EP_color-white);
   box-shadow:
     0 0 1px rgba(67, 90, 111, 0.47),
@@ -18,17 +18,17 @@
   }
 }
 
-.EP_nav-hidden .EP_header-container {
-  box-shadow: none;
-  transform: translateY(calc(var(--EP_nav-height) * -1));
+.EP_header-hidden .EP_header {
+  transform: translateY(calc(var(--EP_nav-height) * -1.1));
 }
 
-.EP_header {
+.EP_nav {
   align-items: center;
   display: flex;
   height: var(--EP_nav-height);
   justify-content: space-between;
   padding: 0 1.5em;
+  width: 100%;
 
   @media (min-width: 50em) {
     height: auto;
@@ -51,8 +51,11 @@
 .EP_nav__menu {
   background: var(--EP_color-white);
   height: calc(100vh - var(--EP_nav-height));
-  list-style: none;
+  left: 0;
   overflow-y: auto;
+  position: absolute;
+  top: var(--EP_nav-height);
+  width: 100%;
 
   @media (min-width: 50em) {
     display: none;

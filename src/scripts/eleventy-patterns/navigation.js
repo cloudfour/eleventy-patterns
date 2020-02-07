@@ -38,8 +38,8 @@ window.addEventListener('load', () => {
   initMenuToggle();
   initSubmenuToggle();
   headsUp({
-    selector: '.EP_js-header-container',
+    selector: '.EP_js-header',
     debounce: 100,
-    hiddenHeaderClass: 'EP_nav-hidden'
+    hiddenHeaderClass: 'EP_header-hidden'
   });
 });
