@@ -3,14 +3,14 @@
   font-family: var(--EP_font-system);
 }
 
-.EP_layout__container {
+.EP_layout__main {
 
   @media(min-width: 50em) {
     display: flex;
   }
 }
 
-.EP_layout__sidebar {
+.EP_sidebar {
   background: var(--EP_color-light-grey);
   display: none;
 
@@ -30,7 +30,7 @@
   margin-top: 1.5em;
 }
 
-.EP_layout__content {
+.EP_content {
   overflow: hidden;
   padding: 1.5em;
 }
