@@ -16,8 +16,12 @@
   list-style: none;
 }
 
+// Unset global pattern library styles
+
 .EP_pattern__example {
   background: #fff;
+  color: initial;
+  font-family: initial;
   padding: 1em;
 }
 
