@@ -20,10 +20,6 @@ body.EP_no-scroll {
   overflow: hidden;
 }
 
-body:not(.EP_nav-hidden) {
-  padding-top: var(--EP_nav-height); /* 1 */
-}
-
 a {
   color: var(--EP_color-blue);
   text-decoration: none;
