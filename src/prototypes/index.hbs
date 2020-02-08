@@ -1,18 +1,19 @@
 ---
 title: Prototypes
-layout: layouts/pattern-library
+layout: layouts/prototype-layout
 ---
 
-{{!-- You can replace the line below with your page content --}}
+<div class="EP_content EP_u_stagger-items">
+  {{!-- You can replace the line below with your page content --}}
+  {{{ markdown (readFileContents 'src/prototypes/README.md') }}}
 
-{{{ markdown (readFileContents 'src/prototypes/README.md') }}}
+  <h2>Our Prototypes</h2>
 
-<h2>Our Prototypes</h2>
-
-{{#each (sortCollection collections.prototypes)}}
-  <ul class="EP_u_list-reset">
-    {{#unless data.hide}}
-      {{> layouts/prototype-listing this}}
-    {{/unless}}
-  </ul>
-{{/each}}
+  {{#each (sortCollection collections.prototypes)}}
+    <ul class="EP_u_list-reset">
+      {{#unless data.hide}}
+        {{> layouts/prototype-listing this}}
+      {{/unless}}
+    </ul>
+  {{/each}}
+</div>

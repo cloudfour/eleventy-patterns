@@ -1,3 +1,7 @@
+:root {
+  --EP_nav-spacing: 1.5rem;
+}
+
 /**
  * This is starting to get really meta...
  * A pattern for displaying patterns
@@ -8,8 +12,16 @@
   padding: 0.5em;
 }
 
+.EP_pattern__menu {
+  list-style: none;
+}
+
+// Unset global pattern library styles
+
 .EP_pattern__example {
   background: #fff;
+  color: initial;
+  font-family: initial;
   padding: 1em;
 }
 

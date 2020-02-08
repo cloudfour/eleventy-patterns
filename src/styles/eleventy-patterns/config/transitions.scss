@@ -1,0 +1,24 @@
+:root {
+  /**
+   * Motion Duration Variables
+   */
+  --EP_duration-quick: 0.2s;
+  --EP_duration-prompt: 0.3s;
+
+  /**
+   * Motion Easing Variables
+   * from http://easings.net/
+   *
+   * "Easing out is typically the best for user interface work, because the
+   *  fast start gives your animations a feeling of responsiveness, while
+   *  still allowing for a natural slowdown at the end."
+   * - http://bit.ly/choosing-the-right-easing
+   */
+  --EP_ease-normal-out: ease-out;
+
+  /**
+   * Standard Transition Combinations
+   */
+  --EP_transition-quick: var(--EP_ease-normal-out) var(--EP_duration-quick);
+  --EP_transition-prompt: var(--EP_ease-normal-out) var(--EP_duration-prompt);
+}

@@ -1,28 +1,28 @@
-:root {
-  --EP_label-border-width: 0.3em;
-}
-
 .EP_label {
   background: var(--EP_color-light-grey);
-  border-radius: 0.1em;
+  border-radius: var(--EP_border-radius);
   display: inline-block;
   margin-bottom: 0.25em;
   margin-right: 0.5em;
-  padding: 0.3em 0.5em;
+  padding: 0.5em 1em;
 }
 
 .EP_label--wip {
-  border-left: var(--EP_label-border-width) solid var(--EP_color-dark-grey);
+  background: var(--EP_color-light-grey);
+  color: var(--EP_color-dark-grey);
 }
 
 .EP_label--approved {
-  border-left: var(--EP_label-border-width) solid var(--EP_color-success);
+  background: var(--EP_color-light-green);
+  color: var(--EP_color-dark-green);
 }
 
 .EP_label--archived {
-  border-left: var(--EP_label-border-width) solid var(--EP_color-danger);
+  background: var(--EP_color-light-red);
+  color: var(--EP_color-dark-red);
 }
 
 .EP_label--patternready {
-  border-left: var(--EP_label-border-width) solid var(--EP_color-misc);
+  background: var(--EP_color-light-blue);
+  color: var(--EP_color-blue);
 }

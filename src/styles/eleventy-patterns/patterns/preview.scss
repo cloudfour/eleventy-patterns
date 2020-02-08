@@ -10,16 +10,25 @@
 
 .EP_preview {
   display: block;
-  height: calc(var(--EP_preview-height) / 2);
+  height: calc(var(--EP_preview-height) / 4);
   overflow: hidden;
-  width: calc(var(--EP_preview-width) / 2);
+
+  @media (min-width: 50em) {
+    height: calc(var(--EP_preview-height) / 2);
+    width: calc(var(--EP_preview-width) / 2);
+  }
 }
 
 .EP_preview__iframe {
   border: none;
-  height: var(--EP_preview-height);
+  object-fit: fill;
   pointer-events: none;
-  transform: scale(0.5);
-  transform-origin: top left;
-  width: var(--EP_preview-width);
+  width: 100%;
+
+  @media (min-width: 50em) {
+    height: var(--EP_preview-height);
+    transform: scale(0.5);
+    transform-origin: top left;
+    width: var(--EP_preview-width);
+  }
 }

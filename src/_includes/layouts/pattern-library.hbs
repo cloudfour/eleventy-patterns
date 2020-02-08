@@ -4,43 +4,40 @@ styles:
 - /styles/eleventy-patterns/index
 scripts:
 - /scripts/eleventy-patterns/index
+- /scripts/eleventy-patterns/navigation
 ---
 <div class="EP_layout">
-  <aside class="EP_layout__sidebar">
+  <header class="EP_header EP_js-header">
     <nav class="EP_nav">
       <h2>
-        <a href="/">
+        <a href="/" class="EP_nav__logo">
           Eleventy Patterns
         </a>
       </h2>
 
-      <div class="EP_nav__category">
-        <h3>
-          <a href="/prototypes">
+      <button class="EP_nav__menu-toggle EP_js-nav__menu-toggle EP_button" aria-expanded="false">Menu</button>
+
+      <ul class="EP_nav__menu EP_js-nav__menu">
+        {{> layouts/menu-section title="Prototypes" link="prototypes" collection=collections.prototypes}}
+        {{> layouts/menu-section title="Patterns" link="patterns" collection=collections.patterns}}
+      </ul>
+
+      <ul class="EP_nav__menu-large">
+        <li>
+          <a href="/prototypes" class="EP_nav__link EP_nav__link-primary">
             Prototypes
           </a>
-        </h3>
-      </div>
-
-      <div class="EP_u_stagger-items EP_nav__category">
-        <h3>
-          <a href="/patterns">
+        </li>
+        <li>
+          <a href="/patterns" class="EP_nav__link EP_nav__link-primary">
             Patterns
           </a>
-        </h3>
-
-        {{#each (sortCollection collections.patterns)}}
-          {{#unless data.hide}}
-            <a href="{{url url}}" class="EP_nav__link">
-              {{data.title}}
-            </a>
-          {{/unless}}
-        {{/each}}
-      </div>
+        </li>
+      </ul>
     </nav>
-  </aside>
+  </header>
 
-  <main class="EP_layout__content EP_u_stagger-items">
+  <main class="EP_layout__main">
     {{{ content }}}
   </main>
 </div>

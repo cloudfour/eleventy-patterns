@@ -3,26 +3,35 @@
  */
 
 .EP_card {
-  border: 1px solid var(--EP_color-light-grey);
-  display: flex;
+  border: var(--EP_border-size) solid var(--EP_color-med-grey);
+  border-radius: var(--EP_border-radius);
   overflow: hidden;
   position: relative;
-  transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+  transition: transform var(--EP_transition-prompt);
+
+  @media (min-width: 50em) {
+    display: flex;
+  }
 }
 
 .EP_card:hover,
 .EP_card:focus {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: var(--EP_shadow-default);
   transform: translateY(-2px);
 }
 
 .EP_card__content {
-  padding: 1em;
+  padding: 1.5em;
 }
 
 .EP_card__graphic {
   flex-shrink: 0;
-  transition: transform 0.3s ease-out;
+  transition: transform var(--EP_transition-prompt);
+}
+
+.EP_card__primary-action {
+  color: var(--EP_color-text);
+  text-decoration: none;
 }
 
 .EP_card__primary-action::after {

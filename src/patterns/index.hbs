@@ -1,18 +1,19 @@
 ---
 title: Pattern Library
-layout: layouts/pattern-library
+layout: layouts/pattern-layout
 ---
 
-{{!-- You can replace the line below with your page content --}}
+<div class="EP_content EP_u_stagger-items">
+  {{!-- You can replace the line below with your page content --}}
+  {{{ markdown (readFileContents 'src/patterns/README.md') }}}
 
-{{{ markdown (readFileContents 'src/patterns/README.md') }}}
+  <h2>Our Patterns</h2>
 
-<h2>Our Patterns</h2>
-
-{{#each collections.patterns}}
-  <ul class="EP_u_list-reset">
-    {{#unless data.hide}}
-      {{> layouts/pattern-listing this}}
-    {{/unless}}
-  </ul>
-{{/each}}
+  {{#each collections.patterns}}
+    <ul class="EP_u_list-reset">
+      {{#unless data.hide}}
+        {{> layouts/pattern-listing this}}
+      {{/unless}}
+    </ul>
+  {{/each}}
+</div>

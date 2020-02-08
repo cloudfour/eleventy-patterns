@@ -1,0 +1,13 @@
+<div class="EP_sidebar">
+  <ul class="EP_sidebar__menu">
+    {{#each (sortCollection this)}}
+      {{#unless data.hide}}
+        <li class="EP_sidebar__menu-item">
+          <a href="{{url url}}" class="EP_nav__link">
+            {{data.title}}
+          </a>
+        </li>
+      {{/unless}}
+    {{/each}}
+  </ul>
+</div>

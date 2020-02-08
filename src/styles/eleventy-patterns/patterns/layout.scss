@@ -1,31 +1,38 @@
-:root {
-  --EP_sidebar-width: 17em;
-}
-
 .EP_layout {
   background: #fff;
+  color: var(--EP_color-text);
   font-family: var(--EP_font-system);
+  padding-top: var(--EP_nav-height);
 }
 
-.EP_layout__content,
-.EP_layout__sidebar {
-  padding: 2em;
+.EP_layout__main {
+
+  @media(min-width: 50em) {
+    display: flex;
+  }
 }
 
-.EP_layout__sidebar {
+.EP_sidebar {
   background: var(--EP_color-light-grey);
-}
+  display: none;
 
-@media(min-width: 40em) {
-  .EP_layout__sidebar {
-    bottom: 0;
-    overflow-y: auto;
-    position: fixed;
-    top: 0;
+  @media(min-width: 50em) {
+    display: block;
+    flex: 0 0 auto;
+    padding: 0.5em 0;
     width: var(--EP_sidebar-width);
   }
+}
 
-  .EP_layout__content {
-    margin-left: var(--EP_sidebar-width);
-  }
+.EP_sidebar__menu {
+  list-style: none;
+}
+
+.EP_sidebar__menu-item > * + * {
+  margin-top: 1.5em;
+}
+
+.EP_content {
+  overflow: hidden;
+  padding: 1.5em;
 }

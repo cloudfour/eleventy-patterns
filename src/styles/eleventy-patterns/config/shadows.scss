@@ -1,0 +1,14 @@
+/**
+ * Shared custom properties for a default box shadow
+ */
+
+:root {
+  --EP_shadow-color: rgba(0, 0, 0, 0.2);
+  --EP_shadow-blur: 5px;
+  --EP_shadow-offset: 2px;
+  --EP_shadow-default:
+    var(--EP_shadow-offset)
+    var(--EP_shadow-offset)
+    var(--EP_shadow-blur)
+    var(--EP_shadow-color);
+}
