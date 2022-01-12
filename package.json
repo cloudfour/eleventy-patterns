@@ -23,7 +23,7 @@
     "gulp-shell": "^0.7.1",
     "gulp-sourcemaps": "^2.6.5",
     "install": "^0.13.0",
-    "markdown-it": "^8.4.2",
+    "markdown-it": "^12.3.2",
     "minimist": "^1.2.3",
     "node-sass": "^4.12.0",
     "path": "^0.12.7",
